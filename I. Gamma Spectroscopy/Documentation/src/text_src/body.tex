@@ -1,0 +1,193 @@
+\section{Kérdések kidolgozása}
+\begin{enumerate}
+    \item Q: Milyen természetes radioaktív sorokat ismerünk?
+    \begin{displayquote}
+        A: $\alpha$-bomlás során az adott mag tömegszáma $4$-el csökken, $\beta$- és $\gamma$-bomlás során pedig nem változik. Emiatt 4 bomlási sort tudunk megkülönböztetni, melyeket egyértelműen a bennük található atomok tömegszámainak négyes maradéka különböztet meg egymástól. A Földön természetes körülmények között jelenleg is előforduló családok az $^{238}$U, $^{235}$U és $^{232}$Th. Rövid felezési ideje miatt már csak mesterséges folyamatokból ismert a $^{237}$Np család. A $^{232}$Th család atomjainak tömegszámai $4$-el osztva $0$ maradékot adnak eredményül, a $^{235}$U család esetében $1$-et, a $^{238}$U család tagjai $2$-t, míg végül a $^{237}$Np család tagjai 3-at.
+    \end{displayquote}
+    
+    \item Q: Hogyan, mi alapján határozzuk meg a gránit urántartalmát?
+    \begin{displayquote}
+        A: A labor során ezt az ún. \q{gamma-spektroszkópia} módszerével határozzuk meg. Látni fogjuk, hogy a gránitot tulajdonképpen csak az $^{238}$U és annak leányelemeiből származó $\gamma$-bomlás során keletkező fotonok hagyják el, a benne található $^{232}$Th-ből származó fotonok csak alig érzékelhetők. Ezek energiáját megmérve, karakterisztikus csúcsokat azonosíthatunk a kibocsájtott spektrumban, melyből következtethetünk a minta radioaktív összetételére. A megfelelő energiacsúcsok alatti terület arányos az aktivitással (és a mérési idővel), így a keresett radioaktív elem koncentrációjával.
+    \end{displayquote}
+    
+    \item Q: Hogyan működik, és milyen típusú az általunk használt detektor?
+    \begin{displayquote}
+        A: A mérésleírás alapján \q{a detektor egy nagy tisztaságú germánium félvezető detektor}. Ebben a mintából kisugárzódó $\gamma$-fotonok teljes energiája leadódhat valamilyen fény-anyag kölcsönhatás (fotoeffektus, Compton-szórás, vagy párkeltést követő annihiláció) során. Ez minden esetben valamilyen töltött részecske (vagy részecskék) kiválását, vagy keletkezését okozza a fotont elnyelő anyagban. A nagy tisztaságú félvezetőből készült detektorunk esetében ez elektron-lyuk párok keletkezését fogja jelenteni, mely elektronok nagy intenzitású áramlását eredményezi így a detektorban, mely áramimpulzust arányos az elnyelődött foton energiájával és mely impulzust már meg tudunk mérni.
+    \end{displayquote}
+    
+    \item Q: Lehetne-e a fenti detektorral alfa- illetve béta-sugárzást mérni, és miért?
+    \begin{displayquote}
+        A: A detektor minden esetben a benne található félvezetőben keletkező elektron-lyuk párok keletkezését érzékeli. Minden olyan folyamat, melyek során ilyenek keletkeznek, azt a detektor képes érzékelni. Az $\alpha$-bomlás során egy nagy tömegű, töltött $\alpha$-részecske hagyja el a bomló magot, míg $\beta$-bomlás során egy $e^{-}$, vagy egy $e^{+}$ távozik. Ezek a töltésüknek köszönhetően, kölcsönhatva a félvezető töltött részecskéivel, fel tudják borítani a félvezetőben található egyensúlyi helyzetet, ezzel áramimpulzust létrehozva. Természetesen ezen részecskék szabad úthossza jóval rövidebb, mint a $\gamma$-bomlás során létrejövő fotoné, így detektálásuk minden esetre jóval nehézkesebb.
+    \end{displayquote}
+    
+    \item Q: Ha $1$ kg talajban $0,01$\% uránt találunk, hogyan kell kiszámítani az urán aktivitását?
+    \begin{displayquote}
+        A: Az aktivitás képlete $A = \lambda N$, ahol $N$ a részecskeszám, $\lambda$ pedig a bomlási állandó. Ez esetben
+        \begin{equation}
+            A
+            =
+            \lambda_{^{238}U}
+            *
+            \frac{m_{^{238}U}}{M_{^{238}U}}
+            *
+            N_{A}
+            =
+            6 * 10^{-18}\ \frac{1}{\text{s}}
+            *
+            \frac{1000 * 0.001\ \text{g}}{238,03\ \frac{\text{g}}{\text{mol}}}
+            *
+            6,022 * 10^{23} \frac{1}{\text{mol}}
+            \approx
+            15180\ \text{Bq}
+        \end{equation}
+    \end{displayquote}
+    
+    \item Q: Milyen adatok kellenek a mérésünkben az aktivitás kiszámításához? (képlet is)
+    \begin{displayquote}
+        A: A mérés során használt módszerben a $\gamma$-foton beütések energiaspektrumán található egyik karakterisztikus csúcs alatti nettó területet ($N$), a detektor ezen energiaintervallumra vonatkozó hatásfokát ($\eta$), valamint az ilyen energiájú $\gamma$-fotonok intenzitását ($I$) tudjuk megmérni. Ezek mellett ismert érték a mérési idő ($t$), mellyel az aktivitás fordítottan arányos. Ezek alapján az aktivitást a következő képlet alapján határozhatjuk meg:
+        \begin{equation}
+            A
+            =
+            \frac{N}{\eta * I * t}
+        \end{equation}
+    \end{displayquote}
+    
+    \item Q: Miért van szükség nagyfeszültségre a germánium detektor használatakor?
+    \begin{displayquote}
+        A: A mérési összeállításban használt $3000$ - $4000$ V-os feszítő-feszültség szerepe, hogy megakadályozza a $\gamma$-fotonok energialeadása során keletkező elektron-lyuk párok rekombinációját, rákényszerítve a félvezető elektronjait, hogy a pozitív-, a félvezető elektronhiányait pedig, hogy a negatív elektródákra gyűljenek össze és ezzel egy áramimpulzust hozzanak létre.
+    \end{displayquote}
+    
+    \item Q: Miért kell a detektort hűteni?
+    \begin{displayquote}
+        A: Felmelegedett detektorral nem tudod megmérni a gránitrúd aktivitását Juszt László, hát mit képzelsz te utolsó mocskos féreg, hogy a magyarság, kereszténység majd eltűri ezt te bűnöző? Hagynád, hogy áram folyjon a félvezetőre kapcsolt feszítő-feszültség miatt radioaktivitás nélkül is nagy hőmérsékleten, hát mit képzelsz te magadról??
+    \end{displayquote}
+    
+    \item Q: $0,119$ g tiszta $^{238}$U-nak mekkora az aktivitása, ha a bomlási állandója (kerekítve) $6 * 10^{-18}$ s$^{-1}$?
+    \begin{displayquote}
+        A: Az aktivitás képlete $A = \lambda N$, ahol $N$ a részecskeszám, $\lambda$ pedig a bomlási állandó. Ez esetben
+        \begin{equation}
+            A
+            =
+            \lambda_{^{238}U}
+            *
+            \frac{m_{^{238}U}}{M_{^{238}U}}
+            *
+            N_{A}
+            =
+            6 * 10^{-18}\ \frac{1}{\text{s}}
+            *
+            \frac{0,119\ \text{g}}{238,03\ \frac{\text{g}}{\text{mol}}}
+            *
+            6,022 * 10^{23} \frac{1}{\text{mol}}
+            \approx
+            1806\ \text{Bq}
+        \end{equation}
+    \end{displayquote}
+    
+    \item Q: Mi a szekuláris egyensúly, és mi a feltétele?
+    \begin{displayquote}
+        A: Ha egy bomlási sorban az anyaelem felezési ideje nagyságrendekkel hosszabb, mint a keletkező leányelemekéé, akkor a kettőjük aktivitása megegyezik, hisz értelemszerűen rövid időskálán pontosan annyi leánymag bomlik el, mint amennyi az anyaelem bomlása során keletkezett. Pontosan ezt az állapotot nevezzük \emph{szekuláris egyensúly}nak, amikor egy bomlási sorban a keletkező leányelemek aktivitása megegyezik az anyaelem aktivitásával. Ilyenkor $A = \lambda_{1} N_{1} = \lambda_{2} N_{2} = \dots = \lambda_{i} N_{i}$.
+    \end{displayquote}
+    
+    \item Q: Hogyan működik az amplitúdó-analizátor, mi a feladata?
+    \begin{displayquote}
+        A: Az analizátor feladata, hogy a energiaspektrumot $8192$ db egyenlő széleségű \emph{bin}re felossza és egy mérés során számlálja, hogy hány darab $\varepsilon$ energiájú $\gamma$-foton nyelődik el a detektorban az adott \emph{bin} által lefedett $\varepsilon \in \left[ E,\ E + \delta E \right]$ energiatartományban. Végeredményül az elnyelődött fotonok energiájának eloszlását (hisztogramját) kapjuk meg.
+    \end{displayquote}
+    
+    \item Q: Hogyan kalibráljuk a mérési elrendezést (energiakalibráció)?
+    \begin{displayquote}
+        A: Egy $^{232}$Th izotóp felhasználásával, melynek $\gamma$-emisszióját pár percen keresztül mérjük. Ezzel az ismert energiájú $\gamma$-fotonokat kibocsájtó anyag segítségével meghatározhatjuk, hogy az egyes karakterisztikus csúcsok pontosan mely \emph{bin}ekbe esnek az amplitúdó-analizátoron, így feltérképezve a mérőműszerünk skálázását. Ezután már könnyedén kiszámíthatjuk, hogy egy ismeretlen izotóp által létrehozott csúcsokhoz pontosan milyen energiák tartoznak, így azonosítva az ismeretlen anyagot.
+    \end{displayquote}
+    
+    \item Q: Lehetne-e a fenti detektorral béta-sugárzást mérni, és miért?
+    \begin{displayquote}
+        A: Erre ugyanaz a válasz, mint a $4$)-es pontban.
+    \end{displayquote}
+    
+    \item Q: Hogyan hat kölcsön a detektorral a beérkező gamma-sugárzás, és hogyan függ ez az energiától?
+    \begin{displayquote}
+        A: Erre ugyanaz a válasz, mint a $3$)-as pontban.
+    \end{displayquote}
+    
+    \item Q: Két csúcsot találunk a spektrumban, amelyek ugyanahhoz az izotóphoz tartoznak. Mindkettőre kiszámoljuk az aktivitást. Az egyikre $100 \pm 10$ Bq, a másikra $112 \pm 5$ Bq az eredmény. Mennyi a két eredmény súlyozott átlaga, és annak hibája?
+    \begin{displayquote}
+        A: Az aktivitás súlyozott átlaga megadható az alábbi képlet segítségével:
+        \begin{equation}
+            \left< A \right>
+            =
+            \frac{\sum_{i} \dfrac{A_{i}}{\sigma_{i}^{2}}}{\sum_{i} \dfrac{1}{\sigma_{i}^{2}}}
+        \end{equation}
+        Ahol $\sigma_{i}$ az adott $A_{i}$ aktivitás abszolút hibája. Ebből a fenti értékeket behelyettesítve kapjuk meg a választ a kérdésben szereplő problémára:
+        \begin{equation}
+            \left< A \right>
+            =
+            \left( \frac{100}{10^{2}} + \frac{112}{5^{2}} \right)
+            *
+            \left( \frac{1}{10^{2}} + \frac{1}{5^{2}} \right)^{-1}\ \text{Bq}
+            =
+            109,6\ \text{Bq}
+        \end{equation}
+        Míg ennek \emph{abszolút} hibája megkapható szabály szerint a következő képletből:
+        \begin{equation}
+            \sigma_{\left< A \right>}
+            =
+            \frac{1}{\sqrt{\sum_{i} \dfrac{1}{\sigma_{i}^{2}}}}
+        \end{equation}
+        Melyet felhasználva megkapjuk a szükséges hibaértéket is:
+        \begin{equation}
+            \sigma_{\left< A \right>}
+            =
+            \frac{1}{\sqrt{\dfrac{1}{10^{2}} + \dfrac{1}{5^{2}}}}
+            =
+            4,5\ \text{Bq}
+        \end{equation}
+        Így az aktivitás végleges értéke:
+        \begin{equation*}
+            \left< A \right>
+            =
+            \left(109,6 \pm 4,5 \right)\ \text{Bq}
+        \end{equation*}
+    \end{displayquote}
+    
+    \item Q: A nettó csúcsterületre az eredményünk $200 \pm 10$, a hatásfok pedig $0,02 \pm 10$\%. Az intenzitás az adott vonalra $0,5$ és $20$ másodpercig mértünk. Mekkora az izotóp aktivitása a mintában?
+    \begin{displayquote}
+        A: Már a $6$)-os pontban ismertetett képlet alapján kiszámíthatjuk hibával együtt az aktivitást:
+        \begin{align}
+            A
+            &=
+            \frac{N}{\eta * I * t}
+            =
+            \frac{200 \pm 5\%}{\left( 0,02 \pm 10\% \right) * 0,5 * 20\ \text{s}}
+            =
+            \left( \frac{200}{0,02 * 0,5 * 20} \pm \sqrt{0,05^{2} + 0,1^{2}}\ \% \right)\ \frac{1}{\text{s}}
+            = \nonumber \\
+            &=
+            \left( 1000 \pm 11,8\% \right)\ \text{Bq}
+        \end{align}
+    \end{displayquote}
+    
+    \item Q: Mi az önárnyékolás és milyen nehézséget okoz a mérésnél?
+    \begin{displayquote}
+        A: 
+    \end{displayquote}
+    
+    \item Q: Miért kell tudni a minta kémiai összetételét ahhoz, hogy meghatározhassuk az urántartalmát?
+    \begin{displayquote}
+        A: 
+    \end{displayquote}
+    
+    \item Q: A mintában a $^{214}$Bi aktivitására $1000 \pm 55$ Bq, míg a $^{226}$Ra aktivitása $1500 \pm 75$ Bq. Hogyan magyarázhatjuk a különbséget?
+    \begin{displayquote}
+        A: Lehetőleg anyáddal
+    \end{displayquote}
+    
+    \item Q: Az egyik mintánkban csak az $^{235}$U gamma-sugárzása észlelhető, a $^{214}$Pb sugárzása nem. Mi lehet ennek az oka?
+    \begin{displayquote}
+        A: 
+    \end{displayquote}
+    
+    \item Q: Milyen mesterséges és természetes izotópok mutathatók ki könnyen egy talajmintából gamma-spektroszkópiával?
+    \begin{displayquote}
+        A: 
+    \end{displayquote}
+\end{enumerate}
