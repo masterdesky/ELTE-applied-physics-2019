@@ -21,25 +21,29 @@
 
 % Required for inserting image files
 \usepackage{graphicx}
-\usepackage[skip=2pt, font={scriptsize}, justification=centering]{caption}
+\usepackage[skip=2pt, font={small}, justification=centering]{caption}
 \graphicspath{{./images/}}
 \usepackage{wrapfig}
+
+% Custom footnote text
+\newcommand{\customfootnotetext}[2]{{% Group to localize change to footnote
+\renewcommand{\thefootnote}{#1}% Update footnote counter representation
+\footnotetext[0]{#2}}}% Print footnote text
 
 % Section titles
 \usepackage{titlesec}
 \titleformat{\section}{\centering\bfseries\normalsize}{\thesection. }{0em}{\MakeUppercase}
-\titleformat{\subsection}{\centering\bfseries\small}{\thesubsection. }{0em}{\MakeUppercase}
+\titleformat{\subsection}{\bfseries\small}{\thesubsection. }{0em}{\MakeUppercase}
 
 % Hyperlinks
 \usepackage[unicode]{hyperref}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=cyan,
     citecolor = cyan,
-    pdftitle={Gamma Spectroscopy - PB},
-    pdfpagemode=FullScreen,
+    pdftitle={Gamma Spectroscopy - PB}
 }
 
 % \cdot instead of asterisk (*) symbol
