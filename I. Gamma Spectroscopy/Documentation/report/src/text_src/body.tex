@@ -40,9 +40,44 @@ A mintában tallható radioaktív elemek $A$ aktivitását az alábbi képlet se
 \begin{equation}
 A
 =
-\frac{N}{t * I \left( E, n \right) * \eta \left( E, n \right)}
+\frac{S}{t * I \left( E, n \right) * \eta \left( E, n \right)}
 \end{equation}
-ahol $N$ a részecskeszám, $t$ a mérés időtartama, $I \left( E, n \right)$ az adott energiájú $\gamma$-fotonok intenzitása, az úgynevezett \q{elágazási arány}, míg végül $\eta \left( E, n \right)$ a detektálási hatásfok \citep{gamma_ray_spec}.
+ahol $S$ az adott foto-csúcs alatti nettó terület, $t$ a mérés időtartama, $I \left( E, n \right)$ az adott energiájú $\gamma$-fotonok intenzitása, az úgynevezett \q{elágazási arány}, míg végül $\eta \left( E, n \right)$ a detektálási hatásfok \citep{gamma_ray_spec}. \newline
+Ezen adatok mindegyike ismert és az (\ref{table:1}). és (\ref{table:3}). táblázatból kiolvasható. Az egyes csúcsokhoz tartozó aktivitásértékek hibái a standard hibaterjedés szabályai alapján az alábbi képlet segítségével számíthatóak ki:
+
+\begin{equation}
+\Delta A
+=
+\left(
+\frac{\Delta S}{S} + \frac{\Delta t}{t} + \frac{\Delta I}{I} + \frac{\Delta \eta}{\eta}
+\right)
+\end{equation}
+A számításokban az $I$ intenzitás és a $t$ időmérés hibáját $0$-nak vettem. A kapott értékeket a \ref{table:4}. táblázatban közöltem. Ezen adatok felhasználásával már megkapható a mintában található $^{235}$U mennyisége, mely a táblázatokban ugyanígy van jelölve, valamint az $^{238}$U mennyisége is, mely a táblázatban is jelölt leányelemvel, a $^{234}$Pa$^{m}$ maggal szekuláris egyensúlyban tartózkodik, tehát aktivitásuk megegyezik. Az aktivitás megadható a következő összefüggésből is:
+
+\begin{equation}
+A = \lambda N
+\end{equation}
+ahol $\lambda = \ln \left( 2 \right) /\ T_{1/2}$ a bomlási állandó, $N$ pedig a részecskeszám. Az utóbbi az $A$ és $\lambda$ ismeretében már megadható, mely értékeket szintén a \ref{table:4}. táblázatban közöltem. A részecskeszámok vizsgálatával kiszámíthatjuk az $^{235}$U és $^{238}$U arányát a mintában. Természetes körülmányek között az $^{235}$U részecskék aránya $0.72$\%, míg a maradék tulajdonképpen csak $^{238}$U. A jelenlegi arány a következő:
+
+\begin{align}
+C_{^{235}U}
+&=
+\frac{32.21 * 10^{16}}{32.21 * 10^{16} + 7.46 * 10^{18}}
+=
+\frac{3.22 * 10^{17}}{7.78 * 10^{18}}
+\approx \nonumber \\
+&\approx
+0.0413
+\end{align}
+
+\begin{equation}
+C_{^{238}U}
+=
+\frac{7.46 * 10^{18}}{7.78 * 10^{18}}
+\approx
+0.958
+\end{equation}
+Melynek relatív hibája megegyezik az $N$ hibájával, így határozottan kijelenthető, hogy a mintában található $^{235}$U / $^{238}$U arány kisebb, mint ahogy az a természetben előfordul, így feltehetően szegényített urántartalmú mintát vizsgáltam.
 
 \section{Általános számítási feladatok}
 
