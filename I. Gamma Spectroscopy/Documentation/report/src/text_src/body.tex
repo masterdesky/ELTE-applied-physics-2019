@@ -1,0 +1,36 @@
+\selectlanguage{english}
+\begin{abstract}
+    \noindent Az \emph{Alkalmazott fizikai módszerek laboratórium} első alkalmával a gamma-spektroszkópia témakörét jártuk körül a labormunka során, melyen különböző radioaktív elemeket tartalmazó minták gamma spektrumait vizsgáltuk. A labor ideje alatt megismerkedtünk a méréshez használt berendezéssel, egy germánium félvezető detektorral, és a hozzá tartozó eszközökkel. Felügyeltük a detektor előzetes beállítását és elvégeztük a rendszer energiakalibrációját, majd egyéni mérőfeladatokat hajtottunk végre a laborvezető utasításai alapján. Végezetül meghatároztuk ezek esetében a detektor hatásfokát is. \\
+    Az egyéni feladat során egy ismeretlen, sárga színű, kristályos felületű anyag gamma-spektrumának vizsgálatát kellett elvégeznem.
+\end{abstract}
+\selectlanguage{magyar}
+
+\begin{multicols}{2}
+\section{Bevezetés}
+A gamma-spektroszkópia módszere arra a megfigyelésre alapul, miszerint a $\gamma$-bomlásra képes magok karakterisztikus hullámhosszú, és így meghatározott energiájú fotonokat bocsájtanak ki magukból, mikor gerjesztett állapotból egy alacsonyabb állapotba kerülnek. Ezek a fotonok egy detektorban képesek leadni az energiájukat, amely energiát detektálni vagyunk képesek. \newline
+A labormunka során egy nagy tisztaságú germánium félvezető detektor segítségével mértük ki különböző anyagok gamma-spektrumait, melyben az elhaladó nagyenergiás $\gamma$-fotonok - Compton-szórás, fotoeffektus, vagy párkeltés során - ionizálják a környezetüket, ezzel elektron-lyuk párokat keltve a félvezetőben. A detektorra kapcsolt feszítőfeszültség ezeket a kialakult párokat eltávolítja egymástól, megakadályozva azok gyors rekombinációját, elődiézve egyúttal egy áramimpulzust a félvezetőben. Ez az impulzus detektálható és a foton által leadott energiával arányos. Sok hasonló foton energiájának megmérésével megkapjuk a minta pontos gamma-spektrumát, mely alapján a benne található elemek beazonosítható válnak.
+
+\section{A mérési módszer}
+
+
+\section{Energiakalibráció}
+A mérés során nem közvetlenül a detektorba csapódó fotonok energiáját, hanem az érzékeny, félvezető részében ionizáció hatására létrejövő áramimpulzusok nagyságát vagyunk képesek mérni. Ezeket az impulzusokat egy ún. \q{amplitúdó-analizátor} folyamatosan rögzíti. Az analizátor feladata, hogy egy adott áramerősség tartományt egyenlő szélességű \emph{bin}ekre felosszon, majd számolja, hogy a mérés ideje alatt minden tetszőleges $\left[ I,\ I + \delta I \right]$ \emph{bin}be hány darab áramimpulzus érkezik a detektorból. Ennek a jele egy számítógépre van kötve, melyen valós időben követhetjük ezen hisztogram fejlődését. Az adott minta aktivitásától függően, viszonylag rövid idő alatt már jól felismerhető válik a gamma-spektrum ismert alakja, a mintában található elemekre jellemző karakterisztikus foto-csúcsokkal együtt. \newline
+Az energiakalibráció során egy olyan ismert spektrumú anyagot helyezünk a detektorba, melynek karakterisztikus csúcsait könnyen azonosítani tudjuk és ismerjük a pontos energiájukat. Ezzel viszonylag pontosan meg tudjuk határozni az analizátorunk skálázását és annak \emph{bin} -- energia függvényét. Ezt követően már egy ismeretlen mintából származó csúcsokhoz tartozó energiákat is meg tudjuk mondani. \newline
+Esetünkben ezt a kalibrációt egy $^{232}$Th tartalmú, Auer-gázégő izzóharisnyájával végeztük el. A mérést $t = 300\ \text{s}$ hosszan végeztük, mely során $N = 3473$ áramimpulzust észleltünk. Az általunk használt analizátor névlegesen $4095$ \emph{bin}-re bontja fel a mért áramimpulzus-spektrumot, azonban a mi mérésünk során csak $4083$ \emph{bin} működött, feltehetően a műszer hibájából fakadóan. Néhány karakterisztikus csúcs azonosítása után a mérőszoftver segítségével elvégeztük a koordináta-tengely transzformációt, mely \emph{bin} helyiértékekből keV mértékegységbe váltja át a skálánkat. Az alábbi összefüggést kaptuk az illesztés után:
+\begin{equation}
+    E
+    =
+    0.9255 * \text{BIN} - 1.7434
+\end{equation}
+ahol $\left[ E \right] = \text{keV}$, BIN pedig az adott \emph{bin} helyiértéke $0$ és $4083$ között. Ezáltal az X-tengelyen az energiaskála $E = -1.7434$ keV és $E = 3777.0731$ keV értékek között húzódott, magyarán kb. $2$ keV-el mértünk minden helyen többet, mint a valós érték. Megjegyzendő, hogy ez nem a minden helyen vett pontos eltérés, hanem csak egy közelítő becslés, mely igazán csak a kalibráció során az illesztéshez használt foto-csúcsaink közötti szakaszra megfelelő.
+
+\section{A hatásfok mérése}
+
+
+\section{Egyéni feladat kiértékelése}
+
+
+\section{Számításos feladatok}
+
+
+\end{multicols}
