@@ -2,7 +2,7 @@
 \begin{enumerate}
     \item Q: Mi az a Boltzmann-eloszlás? Adja meg képlettel is!
     \begin{displayquote}
-        A: A Boltzmann-eloszlás egy kanonikus rendszer energiájának valószínűségeloszlása, mely megadja, hogy a rendszer mekkora valószínűséggel tartózkodik egy tetszőleges állapotban adott hőmérséklet és $E$ energia mellett. Az eloszlás képlete a következő:
+        A: A Boltzmann-eloszlás egy rendszer energiájának valószínűségeloszlása, mely megadja, hogy a rendszer mekkora valószínűséggel tartózkodik egy tetszőleges állapotban adott hőmérséklet és $E$ energia mellett. Az eloszlás képlete a következő:
         \begin{equation}
         P_{i}
         =
@@ -19,12 +19,13 @@ Ahol $Z \left( T \right)$ a partíciófüggvény, avagy az állapotösszeg:
 		\sum_{i} g_{i} e^{-E_{i} / \left( k_{B} T \right)}
 		=
 		\sum_{i} g_{i} e^{-E_{i} \beta}
-		\end{equation}
+		\end{equation}	
+Ez kizárólag olyan, termikus egyensúlyban levő rendszer esetében igaz, melynek hőmérséklete kellően magas ahhoz, hogy még ne jelenjen meg a kvantumstatisztikák hatása. 
     \end{displayquote}
 	
-    \item Q: Szobahőmérsékleten, 1 T-nál sokkal kisebb mágneses mező esetén milyen a Zeeman nívók betöltése?
+    \item Q: Szobahőmérsékleten, $1$ T-nál sokkal kisebb mágneses mező esetén milyen a Zeeman nívók betöltése?
     \begin{displayquote}
-    	A: Gyenge külső tér mellett a Zeeman-kölcsönhatás teljesen elhanyagolható, nem hasadnak fel az atomi energiaszintek.
+    	A: Szobahőmérsékleten, gyenge tér mellett a két nívó energiakülönbsége apró, míg a $k_{B}T$ energia jelentősen nagyobb, melyben a nívók közti különbség zajszerűen elveszik. A nívók betöltöttsége ilyenkor azonos.
     \end{displayquote}
     
     \item Q: Mi az az indukált emisszió? Milyen összefüggés van a fotonok közt?
@@ -47,7 +48,7 @@ akkor vagy az abszorpció jelensége jön létre, mely a pumpálás irányába t
     
     \item Q: A pumpáló fény polarizációja hogyan függ ez össze az elektronok impulzusmomentumának megváltozásával?
     \begin{displayquote}
-    	A: $E = hf$ energiaátmenet esetén E energiájú foton hatására ámenettel fotonkibocsájtás történik, amely nem különböztethető meg az eredeti fotontól. Az irány, az $E$ és a fázis is megegyezik ebben az esetben.
+    	A: A mérés során is használt, cirkulárisan polarizált fény képes az elektronok számára valamennyi többlet-impulzusmomentumot átadni, míg a lineárisan polarizált fény erre nem alkalmas. Az impulzusmomentum változás egyben a mágneses momentum megváltozásával és polarizációjával is együtt jár, melynek hatására makroszkopikus mágneses tér jön létre a vizsgált mintában. (Ld. további részletekért pl. az Einstein--de Haas-kísérletet.)
     \end{displayquote}
     
     \item Q: Lehet-e árnyékolni statikus mágneses teret néhány mm-es fémlemezekkel ill. Faradaykalitkával? Miért?
