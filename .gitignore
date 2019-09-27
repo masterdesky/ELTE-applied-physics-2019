@@ -32,3 +32,6 @@
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+
+## ipynb ignores
+*.ipynb_checkpoints
