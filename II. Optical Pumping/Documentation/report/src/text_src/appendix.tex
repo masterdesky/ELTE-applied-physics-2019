@@ -1,4 +1,61 @@
-\section*{Appendix A - Ábrák} \label{A}
+\appendix
+\renewcommand{\thesection}{APPENDIX \Alph{section}}
+\section{ - Az aktivitás számítása} \label{appendix:A}
+A minta teljes súlyozott aktivitása megkapható az alábbi számításból, felhasználva a \ref{table:4}. táblázatban található értékeket:
+\begin{align}
+\left< A \right>
+&=
+\dfrac{
+\dfrac{1,709\ \text{Bq}}{\left( 0,079\ \text{Bq} \right)^{2}}
++
+\dfrac{2,552\ \text{Bq}}{\left( 0,163\ \text{Bq} \right)^{2}}
++
+\dfrac{3,037\ \text{Bq}}{\left( 0,115\ \text{Bq} \right)^{2}}
++
+\dfrac{2,667\ \text{Bq}}{\left( 0,133\ \text{Bq} \right)^{2}}
++
+\dfrac{36,722\ \text{Bq}}{\left( 2,717\ \text{Bq} \right)^{2}}
+}{
+\dfrac{1}{\left( 0,0786\ \text{Bq} \right)^{2}}
++
+\dfrac{1}{\left( 0,163\ \text{Bq} \right)^{2}}
++
+\dfrac{1}{\left( 0,115\ \text{Bq} \right)^{2}}
++
+\dfrac{1}{\left( 0,133\ \text{Bq} \right)^{2}}
++
+\dfrac{1}{\left( 2,717\ \text{Bq} \right)^{2}}
+}
+= \nonumber \\
+&=
+\dfrac{755,273\ \dfrac{1}{\text{Bq}}}{330,150\ \dfrac{1}{\text{Bq}^{2}}}
+=
+2,287\ \text{Bq}
+\end{align}
+Ennek hibája megadható a következő módon:
+
+\begin{align}
+\sigma_{\left< A \right>}
+&=
+\dfrac{1}{\sqrt{
+\dfrac{1}{\left( 0,0786\ \text{Bq} \right)^{2}}
++
+\dfrac{1}{\left( 0,163\ \text{Bq} \right)^{2}}
++
+\dfrac{1}{\left( 0,115\ \text{Bq} \right)^{2}}
++
+\dfrac{1}{\left( 0,133\ \text{Bq} \right)^{2}}
++
+\dfrac{1}{\left( 2,717\ \text{Bq} \right)^{2}}
+}}
+= \nonumber \\
+&=
+\dfrac{1}{\sqrt{330,150\ \dfrac{1}{\text{Bq}^{2}}}}
+=
+0,055\ \text{Bq}
+\end{align}
+\newpage
+\section{ - Ábrák} \label{appendix:B}
 \topskip0pt
 \vspace*{\fill}
 \begin{center}
@@ -47,11 +104,11 @@
 \end{center}
 \vspace*{\fill}
 
-\section*{Appendix B - Táblázatok} \label{B}
+\section{ - Táblázatok} \label{appendix:C}
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
-Izotóp 			 & Mért $E_{\gamma}$ (keV) & Valós $E_{\gamma}$ (keV)  & Intenzitás (\%) & Tranziens             & $S_{\text{csúcs}}$ & $\delta S_{\text{csúcs}}$ (\%) \\
+Izotóp 			 & Mért $E_{\gamma}$ [keV] & Valós $E_{\gamma}$ [keV]  & Intenzitás [\%] & Tranziens             & $S_{\text{csúcs}}$ & $\delta S_{\text{csúcs}}$ [\%] \\
 \hline
 $^{235}$U        & $145,28$       & $143,768$       & $13,20$          & $\gamma_{\text{4,1}}$ & $3375$  & $2,35$ \\
 $^{235}$U  		 & $164,75$ 	  & $163,358$       & $5,855$          & $\gamma_{\text{5,1}}$ & $1976$  & $4,05$ \\
@@ -67,7 +124,7 @@ $^{234}$Pa$^{m}$ & $998,77$ 	  & $1001,441$      & $8,56 * 10^{-1}$ & $\gamma_{\
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
 \hline
-Izotóp 			 & $E_{\gamma}$ (keV) & Intenzitás (\%) & Felezési idő \\
+Izotóp 			 & $E_{\gamma}$ [keV] & Intenzitás [\%] & Felezési idő \\
 \hline
 $^{243}$Cm       & $760$     & $0$              & $29,1$ év    \\
 $^{249}$Cf       & $760$     & $2 * 10^{-2}$    & $351$ év     \\
@@ -87,7 +144,7 @@ $^{192}$Ir       & $765,8$   & $1,49 * 10^{-3}$ & $73.831$ nap \\
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
 \hline
-Izotóp 			 & Mért $E_{\gamma}$ (keV) & $\eta$ (\%)          & $\delta \eta$ (\%) \\
+Izotóp 			 & Mért $E_{\gamma}$ [keV] & $\eta$ [\%]          & $\delta \eta$ [\%] \\
 \hline
 $^{235}$U 		 & $145,28$                & $1,33059 * 10^{-1}$  & $2,218$            \\
 $^{235}$U 		 & $164,75$ 	           & $1,23267 * 10^{-1}$  & $2,336$            \\
@@ -101,17 +158,30 @@ $^{234}$Pa$^{m}$ & $998,77$ 	           & $2,7098 * 10^{-2}$   & $3,75$         
 \end{center}
 
 \begin{center}
-\begin{tabular}{|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
-Izotóp 			 & $A$ (Bq) & $\delta A$ (\%) & $\lambda$ ($1/s$)   & $N$ (db)         & $\delta N$ (\%) \\
+Izotóp 			 & $A$ [Bq] & $\delta A$ [\%] & $\Delta A$ [Bq] & $\lambda$ ($1/s$)   & $N$ [db]         & $\delta N$ [\%] \\
 \hline
-$^{235}$U 		 & $1.790$  & $0.046$ 		  & $3.12 * 10^{-17}$   & $5.74 * 10^{16}$ & $=\delta A$ \\
-$^{235}$U 		 & $2.552$  & $0.064$ 		  & $3.12 * 10^{-17}$   & $8.18 * 10^{16}$ & $=\delta A$ \\
-$^{235}$U 		 & $3.037$  & $0.038$ 		  & $3.12 * 10^{-17}$   & $9.74 * 10^{16}$ & $=\delta A$ \\
-$^{235}$U        & $2.667$  & $0.050$ 		  & $3.12 * 10^{-17}$   & $8.55 * 10^{16}$ & $=\delta A$ \\
-?                & ?        & $0.043$         & ?                   & ?                & $=\delta A$ \\
-$^{234}$Pa$^{m}$ & $36.722$ & $0.074$ 		  & $4.92 * 10^{-18}$   & $7.46 * 10^{18}$ & $=\delta A$ \\
+$^{235}$U 		 & $1.790$  & $0.046$ 		  & 0,079          & $3.12 * 10^{-17}$   & $5.74 * 10^{16}$ & $=\delta A$ \\
+$^{235}$U 		 & $2.552$  & $0.064$ 		  & 0,163          & $3.12 * 10^{-17}$   & $8.18 * 10^{16}$ & $=\delta A$ \\
+$^{235}$U 		 & $3.037$  & $0.038$ 		  & 0,115          & $3.12 * 10^{-17}$   & $9.74 * 10^{16}$ & $=\delta A$ \\
+$^{235}$U        & $2.667$  & $0.050$ 		  & 0,133          & $3.12 * 10^{-17}$   & $8.55 * 10^{16}$ & $=\delta A$ \\
+?                & ?        & $0.043$         & ?              & ?                   & ?                & $=\delta A$ \\
+$^{234}$Pa$^{m}$ & $36.722$ & $0.074$ 		  & 2,717          & $4.92 * 10^{-18}$   & $7.46 * 10^{18}$ & $=\delta A$ \\
 \hline
 \end{tabular}
 \captionof{table}{Az egyes foto-csúcsokhoz tartozó aktivitás értékek, bomlási állandól, valamit részecskeszámok és ezek hibái} \label{table:4}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Pozíció & Mérés ideje [s]   & $N$ [db]   & $A$ [Bq]   & $\delta A$ [\%] \\
+\hline
+Nyitott & $100$             & $275$      & $2.75$     & $0.06$ \\
+\hline
+Zárt    & $601$             & $642$      & $1.07$     & $0.04$ \\
+\hline
+\end{tabular}
+\captionof{table}{A háttérsugárzás mérése során kapott értékek} \label{table:5}
 \end{center}
