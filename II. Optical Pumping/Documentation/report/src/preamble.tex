@@ -5,9 +5,6 @@
 \usepackage{cancel}
 \usepackage{mathrsfs}
 
-% Code snippets
-\def\code#1{\texttt{#1}}
-
 % Colour
 \usepackage{color}
 \usepackage[dvipsnames]{xcolor}
@@ -32,6 +29,7 @@
 
 % Section titles
 \usepackage{titlesec}
+\renewcommand{\thesection}{\Roman{section}}
 \titleformat{\section}{\centering\bfseries\normalsize}{\thesection. }{0em}{\MakeUppercase}
 \titleformat{\subsection}{\bfseries\small}{\thesubsection. }{0em}{\MakeUppercase}
 
