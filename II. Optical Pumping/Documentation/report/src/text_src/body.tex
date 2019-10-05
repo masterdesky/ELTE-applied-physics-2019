@@ -6,9 +6,31 @@
 
 \begin{multicols}{2}
 \section{Bevezetés}
-Az optikai pumpálás alatt azt a folyamatot értjük, mely során fény besugárzásával valamilyen mintában található elektronokat magasabb energiaszintre gerjesztünk és ún. \q{populáció inverziót} hozunk létre, vagyis megfordítjuk az egyes energiaszintek -- egyensúlyi helyzetben és kellően magas hőmérsékleten a Boltzmann-eloszlás alapján várható -- betöltöttségi arányait. A gerjesztéssel feltöltött energiaszint emiatt metastabil, így arról folyamatosan elektronok fognak spontán emisszió útján leugrani az alacsonyabb szintekre, miközben koherens fotonokat bocsájtanak ki. A módszert első sorban lézerekben alkamazzák, ahol az aktív közegben található anyag pumpálása során kilépő fotonokat használják fel a lézerfény létrehozásához.
+Az optikai pumpálás alatt azt a folyamatot értjük, mely során - optikai besugárzással - egy mintában található elektronokat magasabb energiaszintre gerjesztünk és és ezzel megváltoztatjuk az egyes energiaszintek (első sorban a Zeeman- valamint hiperfinom kölcsönhatás miatt kialakult alnívók) -- egyensúlyi helyzetben és kellően magas hőmérsékleten a Boltzmann-eloszlás alapján várható -- betöltési arányait. A pumpálás során célunk, hogy ún. \q{populáció inverziót} hozzunk létre az általunk gerjesztett két nívó között. Ezalatt az az állapotot értjük, amikor a rendszerben található részecskék közül több tartózkodik a magasabb energiaszinten, mint amennyi az alacsonyon. A gerjesztéssel feltöltött energiaszint emiatt nem tartózkodik egyensúlyi állapotban és erősen metastabil, így arról folyamatosan elektronok fognak spontán emisszió útján az alacsonyabb szintekre vándorolni, miközben az energiakülönbséggel megegyező energiájú, koherens fotonokat bocsájtanak ki. A populáció inverzió egyik alapfeltétele emiatt, hogy a rendszerünk legalább $3$ db nívóval rendelkezzen, melyeket jelöljünk $A$, $B$ és $C$ indexekkel. Ha ekkor $E_{B} > E_{C} > E_{A}$, akkor pumpálás során az $A \to B$ átmetentet próbáljuk megvalósítani, melyről spontán emisszió útján a $C$ nívóra fognak az egyes részecskék leugrani. Ezzel effektíve az $A$ és $C$ nívók közti populáció inverziót tudjuk megvalósítani egy köztes ($B$-re történő) gerjesztés felhasználásával. \newline
+A mérésben rubídiumgáz részecskéinek két, Zeeman-felhasadásból származó nívója között valósítottunk meg populáció inverziót, ahol a harmadik (köztes) nívót az egyik hiperfinom-kölcsönatásból származó energiaszinttel biztosítottuk. A rubídiumatomok Zeeman-felhasadását egy Helmholtz-terekcs felhasználásával valósítottuk meg.
 
-\section{A folyamatot meghatározó időállandók}
 
+\section{Mérési körülmények}
+A labor feladatainak elvégzése során két módszer segítségével gerjesztettük a rubídiumgáz. Első esetben egy Rb- és Kr puffer gázt tartalmazó kisülési cső fényével, melyet egy optikai rendszeren keresztül vezettünk a mintára. A kisülési csőböl kilépő fény sugármenetét egy gyűjtőlencse alakította ki, melyet ezután egy, a Rb hevítéséből származó D$_{1}$ vonalat átengedő, $\lambda_{\text{max}} = 795$ nm-es interferenciaszűrővel tettünk közel koherenssé. A sugár ezután áthaladt egy polarizációs lencsén, mely poláros fényt ezt követően egy kettőstörő kristállyal (ún. $\lambda/4$-es lemezzel) cirkulárisan polarizálttá változtattunk. A mintán történő áthaladás után a sugarat egy újabb lencserendszerrel összegyűjtjük, majd egy fotodiódára vezetjük rá, melynek jelét egy erősítőn keresztül egy oszcilloszkópon észlelhetjük. \newline
+Második esetben egy rádófrekvenciás jelgenerátor jelét kapcsoltuk egy második, a Zeeman-felhasadást biztosító tekercspárra merőleges Helmholtz-tekercsre, mellyel egy újabb, periodikus mágneses teret hoztunk létre, miközben továbbra is folytattuk a rendszer optikai pumpálását. Ha ez a második tér olyan frekvenciával rendelkezik, melyre teljesül a laborleírásban is ismertetett rezonanciafeltétel
+
+\begin{equation}
+E_{2} - E_{1}
+=
+h \nu
+=
+\mu_{B} * g_{F} * B
+\end{equation}
+akkor ez a besugárzás képes újabb átmeteneteket létrehozni a két Zeeman-nívó között. Ez lehet a felső szintről az alsóra történő indukált emisszió, vagy a másik irányba végbemenő abszorpció. A két nívó azonos betöltöttsége esetén mindkét átmenet egyenlő valószínűséggel fordul elő, azonban pumpálás során már nincs meg ez az egyensúly. Mivel a fenti nívó betölttötsége jóval nagyobb, így rádiófrekvenciás gerjesztés hatására a felsőbb energiaszintről az alsóbbra történő ugrás valószínűsége megnő. Végeredményben ez az extra gerjesztés az optikai pumpálás ellen fog dolgozni.
+
+\section{A folyamatot meghatározó időállandók mérése}
+Feladataink küzé tartozott azt optikai pumpálás során lejátszódó folyamatokra jellemző $\tau$, valamint $T_{2}$ karakterisztikus időállandók mérése. A $\tau$ állandó a mágneses tér bekapcsolása -- és így a Zeeman-effektus létrehozása -- utáni átmenet idejét hivatott leírni. A Zeeman-felhasadás létrejöttekor a populáció inverzió feltétele teljesül, így a pumpálás hatására elkezdődik az energiaszintek betöltöttségének átrendeződése, mely egy időben véges hosszúságú folyamat. A mágneses tér bekapcsolásakor a fotodióda jelén egy exponenciális felfutó élt láthatunk, mely az alábbi paraméteres függvénnyel írható le:
+
+\begin{equation}
+y
+=
+A + B * e^{C * t}
+\end{equation}
+ahol $\tau = 1/C$.
 
 \end{multicols}
