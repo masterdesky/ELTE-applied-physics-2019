@@ -1,36 +1,98 @@
 \selectlanguage{english}
 \begin{abstract}
-    \noindent Az \emph{Alkalmazott fizikai módszerek laboratórium} második alkalmával az optikai pumpálás módszerét jártuk körül, mely során egy $^{85}$Rb és $^{87}$Rb izotópokat tartalmazó rubídiumgázt sugároztunk be lézerrel, majd nagyfrekvenciás elektromágneses sugárzással. A labormunka során egy Rb- és Kr-tartalmú kisülési cső segítségével megmértük a rendszerre jellemző $\tau = \left( 1/T_{p} + 1/T_{1} \right)^{-1}$, valamint a $T_{2}$ relaxációs időket. Ezt követően egy rádiófrekvenciás jelgenerátorral $4$ különböző frekvencián feltérképeztük a két rubídiumizotóphoz tartozó rezonanciaátmenetek pozícióját, mely során megmértük a Föld mágneses terének nagyságát is. Végül megpróbáltuk meghatározni a két rubídiumizotóphoz tartozó a hiperfinom kölcsönhatást is figyelembevevő Landé-féle g-faktort ($g_{F}$) mely azonban a laborban található eszköz műszaki hibájából fakadóan csupán az $I=3/2$ magspinnel rendelkező $^{87}$Rb izotópra sikerült.
+    \noindent Az \emph{Alkalmazott fizikai módszerek laboratórium} második alkalmával az optikai pumpálás módszerét jártuk körül, mely során egy $^{85}$Rb és $^{87}$Rb izotópokat tartalmazó rubídiumgázt sugároztunk be lézerrel, majd nagyfrekvenciás elektromágneses sugárzással. A labormunka során egy Rb- és Kr-tartalmú kisülési cső segítségével megmértük a rendszerre jellemző $\tau = \left( 1/T_{p} + 1/T_{1} \right)^{-1}$, valamint a $T_{2}$ relaxációs időket. Ezt követően egy rádiófrekvenciás jelgenerátorral $4$ különböző frekvencián feltérképeztük a két rubídiumizotóphoz tartozó rezonanciaátmenetek pozícióját, mely során megmértük a Föld mágneses terének nagyságát is. Végül megpróbáltuk meghatározni a két rubídiumizotóphoz tartozó a hiperfinom kölcsönhatást is figyelembe vevő Landé-féle g-faktort ($g_{F}$) mely azonban a laborban található eszköz műszaki hibájából fakadóan csupán az $I=3/2$ magspinnel rendelkező $^{87}$Rb izotópra sikerült.
 \end{abstract}
 \selectlanguage{magyar}
 
 \begin{multicols}{2}
 \section{Bevezetés}
-Az optikai pumpálás alatt azt a folyamatot értjük, mely során - optikai besugárzással - egy mintában található elektronokat magasabb energiaszintre gerjesztünk és és ezzel megváltoztatjuk az egyes energiaszintek (első sorban a Zeeman- valamint hiperfinom kölcsönhatás miatt kialakult alnívók) -- egyensúlyi helyzetben és kellően magas hőmérsékleten a Boltzmann-eloszlás alapján várható -- betöltési arányait. A pumpálás során célunk, hogy ún. \q{populáció inverziót} hozzunk létre az általunk gerjesztett két nívó között. Ezalatt az az állapotot értjük, amikor a rendszerben található részecskék közül több tartózkodik a magasabb energiaszinten, mint amennyi az alacsonyon. A gerjesztéssel feltöltött energiaszint emiatt nem tartózkodik egyensúlyi állapotban és erősen metastabil, így arról folyamatosan elektronok fognak spontán emisszió útján az alacsonyabb szintekre vándorolni, miközben az energiakülönbséggel megegyező energiájú, koherens fotonokat bocsájtanak ki. A populáció inverzió egyik alapfeltétele emiatt, hogy a rendszerünk legalább $3$ db nívóval rendelkezzen, melyeket jelöljünk $A$, $B$ és $C$ indexekkel. Ha ekkor $E_{B} > E_{C} > E_{A}$, akkor pumpálás során az $A \to B$ átmetentet próbáljuk megvalósítani, melyről spontán emisszió útján a $C$ nívóra fognak az egyes részecskék leugrani. Ezzel effektíve az $A$ és $C$ nívók közti populáció inverziót tudjuk megvalósítani egy köztes ($B$-re történő) gerjesztés felhasználásával. \newline
-A mérésben rubídiumgáz részecskéinek két, Zeeman-felhasadásból származó nívója között valósítottunk meg populáció inverziót, ahol a harmadik (köztes) nívót az egyik hiperfinom-kölcsönatásból származó energiaszinttel biztosítottuk. A rubídiumatomok Zeeman-felhasadását egy Helmholtz-terekcs felhasználásával valósítottuk meg.
+Az optikai pumpálás alatt azt a folyamatot értjük, mely során - optikai besugárzással - egy mintában található elektronokat magasabb energiaszintre gerjesztünk és és ezzel megváltoztatjuk az egyes energiaszintek (első sorban a Zeeman- valamint hiperfinom kölcsönhatás miatt kialakult alnívók) -- egyensúlyi helyzetben és kellően magas hőmérsékleten a Boltzmann-eloszlás alapján várható -- betöltési arányait. A pumpálás során célunk, hogy ún. \q{populáció inverziót} hozzunk létre az általunk gerjesztett két nívó között. Ezalatt az az állapotot értjük, amikor a rendszerben található részecskék közül több tartózkodik a magasabb energiaszinten, mint amennyi az alacsonyon. A gerjesztéssel feltöltött energiaszint emiatt nem tartózkodik egyensúlyi állapotban és erősen metastabil, így arról folyamatosan elektronok fognak spontán emisszió útján az alacsonyabb szintekre vándorolni, miközben az energiakülönbséggel megegyező energiájú, koherens fotonokat bocsájtanak ki. A populáció inverzió egyik alapfeltétele emiatt, hogy a rendszerünk legalább $3$ db nívóval rendelkezzen, melyeket jelöljünk $A$, $B$ és $C$ indexekkel. Ha ekkor $E_{B} > E_{C} > E_{A}$, akkor pumpálás során az $A \to B$ átmenetet próbáljuk megvalósítani, melyről spontán emisszió útján a $C$ nívóra fognak az egyes részecskék leugrani. Ezzel effektíve az $A$ és $C$ nívók közti populáció inverziót tudjuk megvalósítani egy köztes ($B$-re történő) gerjesztés felhasználásával. \newline
+A mérésben rubídiumgáz részecskéinek két, Zeeman-felhasadásból származó nívója között valósítottunk meg populáció inverziót, ahol a harmadik (köztes) nívót az egyik hiperfinom-kölcsönhatásból származó energiaszinttel biztosítottuk. A rubídiumatomok Zeeman-felhasadását egy Helmholtz-terekcs felhasználásával valósítottuk meg.
 
 
 \section{Mérési körülmények}
 A labor feladatainak elvégzése során két módszer segítségével gerjesztettük a rubídiumgáz. Első esetben egy Rb- és Kr puffer gázt tartalmazó kisülési cső fényével, melyet egy optikai rendszeren keresztül vezettünk a mintára. A kisülési csőböl kilépő fény sugármenetét egy gyűjtőlencse alakította ki, melyet ezután egy, a Rb hevítéséből származó D$_{1}$ vonalat átengedő, $\lambda_{\text{max}} = 795$ nm-es interferenciaszűrővel tettünk közel koherenssé. A sugár ezután áthaladt egy polarizációs lencsén, mely poláros fényt ezt követően egy kettőstörő kristállyal (ún. $\lambda/4$-es lemezzel) cirkulárisan polarizálttá változtattunk. A mintán történő áthaladás után a sugarat egy újabb lencserendszerrel összegyűjtjük, majd egy fotodiódára vezetjük rá, melynek jelét egy erősítőn keresztül egy oszcilloszkópon észlelhetjük. \newline
-Második esetben egy rádófrekvenciás jelgenerátor jelét kapcsoltuk egy második, a Zeeman-felhasadást biztosító tekercspárra merőleges Helmholtz-tekercsre, mellyel egy újabb, periodikus mágneses teret hoztunk létre, miközben továbbra is folytattuk a rendszer optikai pumpálását. Ha ez a második tér olyan frekvenciával rendelkezik, melyre teljesül a laborleírásban is ismertetett rezonanciafeltétel
+Második esetben egy rádiófrekvenciás jelgenerátor jelét kapcsoltuk egy második, a Zeeman-felhasadást biztosító tekercspárra merőleges Helmholtz-tekercsre, mellyel egy újabb, periodikus mágneses teret hoztunk létre, miközben továbbra is folytattuk a rendszer optikai pumpálását. Ha ez a második tér olyan frekvenciával rendelkezik, melyre teljesül a laborleírásban is ismertetett rezonanciafeltétel
 
-\begin{equation}
+\begin{equation} \label{eq:1}
 E_{2} - E_{1}
 =
 h \nu
 =
 \mu_{B} * g_{F} * B
 \end{equation}
-akkor ez a besugárzás képes újabb átmeteneteket létrehozni a két Zeeman-nívó között. Ez lehet a felső szintről az alsóra történő indukált emisszió, vagy a másik irányba végbemenő abszorpció. A két nívó azonos betöltöttsége esetén mindkét átmenet egyenlő valószínűséggel fordul elő, azonban pumpálás során már nincs meg ez az egyensúly. Mivel a fenti nívó betölttötsége jóval nagyobb, így rádiófrekvenciás gerjesztés hatására a felsőbb energiaszintről az alsóbbra történő ugrás valószínűsége megnő. Végeredményben ez az extra gerjesztés az optikai pumpálás ellen fog dolgozni.
+akkor ez a besugárzás képes újabb átmeneteteket létrehozni a két Zeeman-nívó között. Ez lehet a felső szintről az alsóra történő indukált emisszió, vagy a másik irányba végbemenő abszorpció. A két nívó azonos betöltöttsége esetén mindkét átmenet egyenlő valószínűséggel fordul elő, azonban pumpálás során már nincs meg ez az egyensúly. Mivel a fenti nívó betölttötsége jóval nagyobb, így rádiófrekvenciás gerjesztés hatására a felsőbb energiaszintről az alsóbbra történő ugrás valószínűsége megnő. Végeredményben ez az extra gerjesztés az optikai pumpálás ellen fog dolgozni.
 
 \section{A folyamatot meghatározó időállandók mérése}
-Feladataink küzé tartozott azt optikai pumpálás során lejátszódó folyamatokra jellemző $\tau$, valamint $T_{2}$ karakterisztikus időállandók mérése. A $\tau$ állandó a mágneses tér bekapcsolása -- és így a Zeeman-effektus létrehozása -- utáni átmenet idejét hivatott leírni. A Zeeman-felhasadás létrejöttekor a populáció inverzió feltétele teljesül, így a pumpálás hatására elkezdődik az energiaszintek betöltöttségének átrendeződése, mely egy időben véges hosszúságú folyamat. A mágneses tér bekapcsolásakor a fotodióda jelén egy exponenciális felfutó élt láthatunk, mely az alábbi paraméteres függvénnyel írható le:
+Feladataink közé tartozott azt optikai pumpálás során lejátszódó folyamatokra jellemző $\tau$, valamint $T_{2}$ karakterisztikus időállandók mérése. A $T_{p}$ és $T_{1}$ állandókkal, melyek sorrendben a pumpálás bekapcsolásának és kikapcsolásának relaxációját írják le, nem foglalkoztunk, ugyanis ezek meghatározása jóval hosszabb mérési időt vett volna igénybe.
+\subsection{A $\tau$ időállandó}
+A $\tau$ állandó a mágneses tér bekapcsolása -- és így a Zeeman-effektus létrehozása -- utáni átmenet idejét hivatott leírni. A Zeeman-felhasadás létrejöttekor a populáció inverzió feltétele teljesül, így a pumpálás hatására elkezdődik az energiaszintek betöltöttségének átrendeződése, mely egy időben véges hosszúságú folyamat. A mágneses tér bekapcsolásakor a fotodióda jelén egy exponenciális felfutó élt láthatunk, mely az alábbi paraméteres függvénnyel írható le:
 
-\begin{equation}
+\begin{equation} \label{eq:2}
 y
 =
 A + B * e^{C * t}
 \end{equation}
-ahol $\tau = 1/C$.
+ahol $\tau = 1/C$. Ezen élek könnyebb meghatározásához az első számú Helmholtz-tekercsekbe egy négyszögjelet vezettünk, mely így egy periodikus, fűrészfogra hasonlító jelet eredményezett a fotodiódán (ld. \ref{fig:1}. ábra). Kezdeti zavarunkban erről véletlenül két adatsort is elmentettünk, ezért úgy döntöttem, hogy mindkettőt feldolgozom, majd a kapott értékeket összehasonlítom és átlagolom, a pontosabb eredmény reményében. \newline
+A két különálló adatsorból egy-egy kivágott felfutó élt vizsgáltam a továbbiakban. A két kivágott él a \ref{fig:2}. ábrán látható. Hogy az esetleges illesztési hibákat kiszűrjem, úgy döntöttem, hogy a jelet átengedem egy aluláteresztő szűrőn, melynek $f_{\text{C}}$ levágási frekvenciáját az eredeti jelalak Fourier-transzformációval kapott frekvenciaterét vizsgálva állapítottam meg (ld. \ref{fig:3}. ábra). Az $f_{\text{C}}$ értékét végül $f_{\text{C}} = 1000$ Hz-nek választottam, mely szűrőn átvezetett teljes jelsorozatok és kivágott éleik sorrendben a \ref{fig:4}. és \ref{fig:5}. ábrán láthatóak. A szűrés utáni frekvenciateret a \ref{fig:6}. ábrán vizualizáltam, melyen bejelöltem a szűrő levágási frekvenciájának értékét is a jobb átláthatóság kedvéért. \newline
+A kivágott jelalakokra történő illesztést előkészítendő, először megbecsültem az $A$, $B$ és $C$ paraméterek közelítő értékeit. Ehhez a közelítéshez a jeleket eltoltam a $t = 0$ pozícióba, majd az alábbi becsléseket adtam az egyes paraméterek számára (feltételezve közben, hogy $t = \infty$-ben az illesztett függvény jól láthatóan egy konstanshoz tart, tehát $C < 0$ minden esetben):
+
+\begin{equation*}
+A
+=
+\left. A + B * e^{C * t} \right|_{t = \infty} \quad (C < 0)
+\end{equation*}
+\begin{equation*}
+B
+=
+\left[ \left. A + B * e^{C * t} \right|_{t = 0} \right] - A
+\end{equation*}
+\begin{equation*}
+C
+=
+\left. \ln \left( \frac{f \left( t \right) - A}{B} \right) * \frac{1}{t} \right|_{t > 0; t < \infty}
+\end{equation*}
+Ahol:
+
+\begin{equation}
+f \left( t \right)
+=
+\left. A + B * e^{C * t} \right|_{t > 0;\ t < \infty}
+\end{equation}
+Végezetül a \ref{eq:2}. egyenletben is szereplő függvényt illesztettem a \texttt{Python}, \texttt{scipy} könyvtárának \texttt{curve\_fit} függvényével, mely illesztési iterációk kezdeti paraméterének az előbb felsorolt $A$, $B$ és $C$ értékeket adtam meg. \newline
+Az illesztések kezdeti paraméterei mind az eredeti, mind az aluláteresztő szűrőn átengedett jelek esetében a \ref{fig:7}. és \ref{fig:9}. ábrákon láthatóak. A véglegesen, optimalizált értékeket ugyanígy a \ref{fig:8}. és \ref{fig:10}. ábrákon ábrázoltam. \newline
+Végül a a $\tau$ értékére a \ref{table:1}. táblázatban láthatóakat kaptam a két mérés alapján.
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Mérés              & $\tau$ [s]                                \\ \hline
+Eredeti 1          & $2,60107 * 10^{-3} \pm 9,32279 * 10^{-5}$ \\ \hline
+Eredeti 2          & $2,90588 * 10^{-3} \pm 7,08765 * 10^{-5}$ \\ \hline
+Szűrt 1            & $2,47563 * 10^{-3} \pm 1,13762 * 10^{-5}$ \\ \hline
+Szűrt 2            & $2,78519 * 10^{-3} \pm 8,73934 * 10^{-6}$ \\ \hline \hline
+Eredeti (átl.)     & $2,75348 * 10^{-3} \pm 1,19374 * 10^{-4}$ \\ \hline
+Szűrt (átl.)       & $2,63041 * 10^{-3} \pm 1,46366 * 10^{-5}$ \\ \hline
+\end{tabular}
+\captionof{table}{Az illesztések után a $\tau$ értékére kapott eredmények.} \label{table:1}
+\end{center}
+
+\subsection{A $T_{2}$ időállandó}
+A $T_{2}$ időállandó a mágneses tér kikapcsolása utáni lecsengést hivatott leírni. A tér kikapcsolásával a Zeeman-nívók megszűnnek, így a pumpálás szükséges feltétele megszűnik. Ekkor a rendszer a $T_{1}$ időállandóval jelölt folyamatnál gyorsabban relaxál a termikus egyensúly felé, ugyanis ilyenkor a pumpálás csak felerősíti a kikapcsoláskor jobban telített felső energiaszintről az alsóbbra történő emissziót. Ez a fotodióda jelében egy lecsengő élet fog eredményezni. Gyakorlatban ebben az esetben nem szüntetjük meg teljesen a tekercs mágneses terét, hanem pontosan akkorát hozunk létre benne, amely ellensúlyozza a Föld mágneses teréből származó komponenst, így hozva létre effektíve zérus mágneses teret a minta helyén. \newline
+A mágneses tér és a fotodióda jele a \ref{fig:11}. ábrán látható. A jelalak feldolgozása és a $T_{2}$ meghatározása a $\tau$ esetén is leírtakkal megegyező módon történt. Az eredeti jelet itt is egy $f_{\text{C}} = 1000$ Hz levágási frekvenciájú aluláteresztő szűrőn engedtem át és az eredeti jellel azonos módon vizsgáltam. A szűrt jelalak a \ref{fig:12}. ábrán látható, míg a kiemelt eredeti és szűrt lefutó él sorrendben a \ref{fig:13}. és \ref{fig:14}. ábrákon találhatóak. \newline
+Az illesztés jelen esetben nem volt triviális feladat, ugyanis a lefutó él exponenciális részének alsó határa nehezen volt behatárolható, melyet a \texttt{curve\_fit} függvény így nem kezelt jól. A probléma megoldásaként megvizsgáltam, hogy az illesztés hibája hogyan változik a lefutó él végpontjainak különböző megválasztására (ld. \ref{fig:15}. ábra). Végül a legkisebb hibával rendelkező végpontot választottam az illesztéshez (ezek a kivágott jelalakok láthatóak a \ref{fig:13}. és \ref{fig:14}. ábrákon). Az illesztés során végül a \ref{fig:16} -- \ref{fig:19} ábrákat kaptam eredményül, ahol a \ref{fig:16}. és \ref{fig:18}. ábrákon a kezdeti paraméterekkel történő illesztett exponenciális, míg a \ref{fig:17}. és \ref{fig:19}. ábrákon az optimalizált paraméterekkel történő függvény van ábrázolva. \newline
+A $T_{2}$ értékére végül a \ref{table:2}. táblázatban található eredményeket kaptam.
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Mérés            & $\tau$ [s]                                \\ \hline
+Eredeti          & $5,16741 * 10^{-4} \pm 2,33856 * 10^{-5}$ \\ \hline
+Szűrt            & $5,25913 * 10^{-4} \pm 5,01825 * 10^{-6}$ \\ \hline
+\end{tabular}
+\captionof{table}{Az illesztések után a $T_{2}$ értékére kapott eredmények.} \label{table:2}
+\end{center}
+
+\section{Rádiófrekvenciás gerjesztés}
 
 \end{multicols}
