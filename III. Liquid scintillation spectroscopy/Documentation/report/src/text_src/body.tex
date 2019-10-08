@@ -1,0 +1,92 @@
+\selectlanguage{english}
+\begin{abstract}
+    \noindent Az \emph{Alkalmazott fizikai módszerek laboratórium} első alkalmával a gamma-spektroszkópia témakörét jártuk körül a labormunka során, melyen különböző radioaktív elemeket tartalmazó minták gamma-spektrumait vizsgáltuk. A labor ideje alatt megismerkedtünk a méréshez használt berendezéssel, egy germánium félvezető detektorral, és a hozzá tartozó eszközökkel. Felügyeltük a detektor előzetes beállítását és elvégeztük a rendszer energiakalibrációját, majd egyéni mérőfeladatokat hajtottunk végre a laborvezető utasításai alapján. Végezetül meghatároztuk ezek esetében a detektor hatásfokát is. \newline
+    Az egyéni feladat során egy ismeretlen, sárga színű, kristályos felületű anyag gamma-spektrumának vizsgálatát kellett elvégeznem.
+\end{abstract}
+\selectlanguage{magyar}
+
+\begin{multicols}{2}
+\section{Bevezetés}
+A gamma-spektroszkópia módszere arra a megfigyelésre alapul, miszerint a $\gamma$-bomlásra képes magok karakterisztikus hullámhosszú, és így meghatározott energiájú fotonokat bocsájtanak ki magukból, mikor gerjesztett állapotból egy alacsonyabb állapotba kerülnek. Ezek a fotonok egy detektorban képesek leadni az energiájukat, amely energiát valamilyen módon detektálni tudunk. \par
+A labormunka során egy nagy tisztaságú germánium félvezető detektor segítségével mértük ki különböző anyagok gamma-spektrumait, melyben az elhaladó nagyenergiás $\gamma$-fotonok - Compton-szórás, fotoeffektus, vagy párkeltés során - ionizálják a környezetüket, ezzel elektron-lyuk párokat keltve az anyagban. A detektorra kapcsolt feszítőfeszültség ezeket a kialakult párokat eltávolítja egymástól, megakadályozva azok gyors rekombinációját, előidézve egyúttal egy áramimpulzus létrejöttét a félvezetőben. Ez az impulzus detektálható és a foton által leadott energiával arányos. Sok hasonló foton energiájának megmérésével megkapjuk a minta pontos gamma-spektrumát, mely alapján a mintában található elemek beazonosítható válnak.
+
+
+\section{Energiakalibráció}
+A mérés során nem közvetlenül a detektorba csapódó fotonok energiáját, hanem az érzékeny, félvezető részében ionizáció hatására létrejövő áramimpulzusok nagyságát vagyunk képesek mérni. Ezeket az impulzusokat egy ún. \q{amplitúdó-analizátor} folyamatosan rögzíti. Az analizátor feladata, hogy egy adott áramerősség tartományt egyenlő szélességű \emph{bin}ekre felosszon, majd számolja, hogy a mérés ideje alatt minden tetszőleges $\left[ I,\ I + \delta I \right]$ \emph{bin}be hány darab áramimpulzus érkezik a detektorból. Ennek a jele egy számítógépre van kötve, melyen egy mérőszoftverrel valós időben követhetjük ezen hisztogram fejlődését. Az adott minta aktivitásától függően, viszonylag rövid idő alatt már jól felismerhető válik a gamma-spektrum ismert alakja, a mintában található elemekre jellemző karakterisztikus foto-csúcsokkal együtt. \par
+Az energiakalibráció során egy olyan ismert spektrumú anyagot helyezünk a detektorba, melynek karakterisztikus csúcsait könnyen azonosítani tudjuk és ismerjük a pontos energiájukat. Ezzel viszonylag pontosan meg tudjuk határozni az analizátorunk skálázását és annak \emph{bin} -- energia függvényét. Ezt követően már egy ismeretlen mintából származó csúcsokhoz tartozó energiákat is meg tudjuk mondani. \par
+Esetünkben ezt a kalibrációt egy $^{232}$Th tartalmú, Auer-gázégő izzóharisnyájával végeztük el. A mérést $t = 30\ \text{s}$ hosszan végeztük, mely során $N = 3473$ áramimpulzust észleltünk. Az általunk használt analizátor névlegesen $4096$ \emph{bin}-re bontja fel a mért áramimpulzus-spektrumot, azonban a mi mérésünk során csak $4083$ \emph{bin} működött, feltehetően a műszer hibájából fakadóan. Néhány karakterisztikus csúcs azonosítása után a mérőszoftver segítségével elvégeztük a koordináta-tengely transzformációt, mely \emph{bin} helyiértékekből keV mértékegységbe váltja át a skálánkat. Az alábbi összefüggést kaptuk az illesztés után:
+\begin{equation}
+    E
+    =
+    0,9255 * \text{BIN} - 1,7343
+\end{equation}
+ahol $\left[ E \right] = \text{keV}$, BIN pedig az adott \emph{bin} helyiértéke $0$ és $4083$ között. Ezáltal az X-tengelyen az energiaskála $E = -1,7343$ keV és $E = 3777,0822$ keV értékek között húzódott. Méretarányosan megegyező, azonban ettől független egybeesés, hogy minden csúcs esetében, hasonlóan kb. $2-3$ keV-el mértünk többet/kevesebbet, mint a valós értékek.
+
+
+\section{A hatásfok mérése}
+A detektorba érkező fotonok nem $100$\%-os valószínűséggel adják le az energiájukat, hanem vannak esetek, amikor a foton egyszerűen kölcsönhatás nélkül áthalad azon. Az összes mért és összes detektor felé kibocsájtódott foton arányát hívjuk a detektor hatásfokának, melyet $\eta$-val jelölünk. Ennek értéke az egyes energiatartományok más és más lehet, így minden foto-csúcsra egy individuális értéket fogunk kapni az $\eta$-ra eredményül. \par
+Ennek kiértékelését egy külön szoftverrel végeztük, mely a foto-csúcsok centroidjainak pontos energiájából, valamint a használt minta anyagi- és geometriai tulajdonságaiból számította ki számunkra az egyes foto-csúcsokhoz tartozó energiaértékeken mérhető hatásfokot. Ezeknek értékeit a \ref{table:3}. táblázatban közlöm.
+
+
+\section{Egyéni feladat kiértékelése}
+\subsection{A minta spektrumában található csúcsok azonosítása}
+Az egyénileg történő mérés során egy kb. $1$ cm átmérőjű, sárga színű, kristályos külsejű kődarabot kellet megvizsgálnom. Az anyag gamma-spektrumát $t = 1073$ s hosszú mérés során vettem fel, mely során $N = 264077$ áramimpulzust észleltem. A teljes lemért spektrumot a \ref{fig:1}. ábrán illusztráltam, míg a \ref{fig:2}. és \ref{fig:3}. ábrán ugyanezen spektrum egyes, kinagyított részeit jelenítettem meg a részletgazdagság reményében. \newline
+A mérőprogrammal $6$ foto-csúcsot vizsgáltam meg, melyeknek felvettem a csúcsterületüket, és azok hibáját, valamint meghatároztam a csúcs pontos, mért helyét. Olyan csúcsokat választottam ki, melyek valamelyik ismert, természetes bomlási családból származhatnak, és melyeket - egy kivételével - könnyen azonosítani is tudtam. Ezen csúcsok pontos képét a \ref{fig:4}. - \ref{fig:9}. ábrákon vizualizáltam. \par
+A $6$ lemért csúcshoz tartozó pontos adatokat mind sikerült egyértelműen, $\gamma$-energiákat tartalmazó standardizált táblázatokból leolvasnom (\cite{firestone19978th} és \cite{lnbl_nuclear}). Ezek adatait energia szerinti növekvő sorrendben az \ref{table:1}. táblázatban gyűjtöttem össze. Egyetlen gondot a $764,24$ keV-es csúcs jelentett, melynek mibenlétére a labormunka során felállított hipotézisek mindegyikét cáfolnom kellett. Később a laborvezető tanácsai alapján és a fent említett táblázatok segítségével ezt a $^{234}$Pa$^{m}$ izotóp, $766,708$ keV-os csúcsaként sikerült azonosítanom. Első megoldásként feltételeztem, hogy ez egy olyan elem csúcsa lehet, melynek nincs utánpótlása. Ez csak akkor lehetséges, ha a felezési ideje éves nagyságrendben mérhető, ugyanis a minta már évek óta a laborban állt. Ennél rövidebb felezési idejű elem esetén az már teljesen elbomlott volna, így nem is észlelhettünk volna belőle származó $\gamma$-fotonokat. A felezési idő aló határát végül $50$ napnál húztam meg, ennél rövidebb $T_{1/2}$-el rendelkező elemeket figyelmen kívül hagytam a továbbiakban. A \ref{table:2}. táblázatban azokat a magokat gyűjtöttem össze, melyek $50$ napnál nagyobb felezési idővel rendelkeznek és $760$ keV, valamint $766$ keV között bocsájtanak ki $\gamma$-fotonokat. A lehetségesen szóbajövő magok közül azonban mindegyik esetén sok másik csúcsnak is meg kellett volna jelennie a spektrumban, ennél jelentősen nagyobb intenzitásokkal, melyek közül azonban egy sem volt megtalálható. \par
+Végül a laborvezető tanácsára elvetettem az ötletet, hogy ez egy utánpótlás nélküli mag, és átnéztem a $^{234}$Pa$^{m}$ gamma-bomlásából származó lehetséges foton-energiákat. Végül az említett táblázatokban megtaláltam, hogy ez feltehetően a $\gamma_{4,1}$ tranziensből származó fotonhoz tartozó csúcs lehetett, melynek intenzitása relatíve jelentősen nagy ($I = 0,3290 \%$) és $766,708$ keV-os energiája közel megegyezik a mért értékekkel.
+
+\subsection{Az aktivitás kiszámítása}
+A mintában található radioaktív elemek $A$ aktivitását az alábbi képlet segítségével határozhatjuk meg:
+
+\begin{equation}
+A
+=
+\frac{S}{t * I \left( E, n \right) * \eta \left( E, n \right)}
+\end{equation}
+ahol $S$ az adott foto-csúcs alatti nettó terület, $t$ a mérés időtartama, $I \left( E, n \right)$ az adott energiájú $\gamma$-fotonok intenzitása, az úgynevezett \q{elágazási arány}, míg végül $\eta \left( E, n \right)$ a detektálási hatásfok \citep{gamma_ray_spec}. \newline
+Ezen adatok mindegyike ismert és az (\ref{table:1}). és (\ref{table:3}). táblázatból kiolvasható. Az egyes csúcsokhoz tartozó aktivitásértékek hibái a standard hibaterjedés szabályai alapján az alábbi képlet segítségével számíthatóak ki:
+
+\begin{equation}
+\delta A
+=
+\sqrt{
+\left( \frac{\Delta S}{S} \right)^{2} + \left( \frac{\Delta t}{t} \right)^{2} + \left( \frac{\Delta I}{I} \right)^{2} + \left( \frac{\Delta \eta}{\eta} \right)^{2}
+}
+\end{equation}
+A számításokban az $I$ intenzitás és a $t$ időmérés hibáját $0$-nak vettem. A kapott értékeket a \ref{table:4}. táblázatban közöltem. Ezen adatok felhasználásával már megkapható a mintában található $^{235}$U mennyisége, mely a táblázatokban ugyanígy van jelölve, valamint az $^{238}$U mennyisége is, mely a táblázatban is jelölt leányelemvel, a $^{234}$Pa$^{m}$ maggal szekuláris egyensúlyban tartózkodik, tehát aktivitásuk megegyezik. Az aktivitás megadható a következő összefüggésből is:
+
+\begin{equation}
+A = \lambda N
+\end{equation}
+ahol $\lambda = \ln \left( 2 \right) /\ T_{1/2}$ a bomlási állandó, $N$ pedig a részecskeszám. Az utóbbi az $A$ és $\lambda$ ismeretében már megadható, mely értékeket szintén a \ref{table:4}. táblázatban közöltem. A részecskeszámok vizsgálatával kiszámíthatjuk az $^{235}$U és $^{238}$U arányát a mintában. Természetes körülmények között az $^{235}$U részecskék aránya $0,72$\%, míg a maradék tulajdonképpen csak $^{238}$U. Az $^{235}$U és $^{238}$U-hoz tartozó kapott részecskeszámokat átlagoltam, végül ezek arányából számoltam a két izotóp arányát. A számolás menete az \hyperref[appendix:A]{A.} függelékben található. Végeredményként a két izotóp arányára az alábbi jött ki:
+
+\begin{equation}
+\frac{N_{^{235}\text{U}}}{N_{^{238}\text{U}}}
+=
+\left( 0,45 \pm 0,03 \right) \%
+\end{equation}
+Mely eredmény a természetesnél valamivel ritkább urántartalmú, de mindenképp a természetesen várhatóval nagyságrendileg megegyező telítettségű mintát indikál. \par
+A teljes (súlyozott) aktivitás és annak hibájának kiszámításához használhatjuk a mérésleírásban is megtalálható képleteket, melyeket külön itt nem közlök. Az aktivitás részletes számítása ezek alapján az \hyperref[appendix:A]{A.} függelékben található. A végleges érték a következő:
+
+\begin{equation}
+\left< A \right>
+=
+\left( 238,34 \pm 3,84 \right)\ \text{Bq} 
+\end{equation}
+
+
+\section{Általános számítási feladatok}
+\subsection{Háttérsugárzás}
+A detektorba normális esetben rengeteg, légköri radonból származó $\gamma$-foton csapódna. Ezen hatást elkerülendő, a detektor vastag ólomtéglákból rakott \q{házikóval} van körbevéve, így kiszűrve a levegőből  és a falakból érkező sugárzás jelentős részét. Ahhoz, hogy az ólomburok fontosságát megérthessük, két mérést végeztünk el. Az első alkalommal a burkot teljesen bezárva, behelyezett minta nélkül mértük meg a háttérsugárzás mértékét, majd második alkalommal ugyanúgy minta nélkül, azonban a burok \q{ajtaját} kinyitva, rajta egy téglányi rést hagyva indítottunk el egy hasonló mérést. \newline
+A két mérést összehasonlítandó értékeket a \ref{table:5}. táblázatban közlöm, mely tartalmazza az aktvitásokat és azok $1/\sqrt{N}$-es relatív hibáját is. Feladatunk volt kiszámítani, hogy teljesen burok nélkül, gömbszimmetrikus geometriát és lineáris függést feltételezve, mekkora lenne az észlelt $\gamma$-fotonok aktivitása? Ezeket figyelembe véve azt mondhatjuk, hogy $1$ tégla kivétele a burokból $2,75\ \text{Bq} - 1,07\ \text{Bq} = 1,68$ Bq-val növeli az aktivitást az $1,07$ Bq-es zárt állapothoz képest. Megfigyeléseink szerint a burkot kb. $33$ db tégla alkotta, melyből megadható már a burok nélküli aktivitás pontos nagysága:
+
+\begin{equation}
+A_{\emptyset}
+=
+1,07\ \text{Bq} + 33 * 1,68\ \text{Bq}
+=
+\left( 56,51 \pm 2,26 \right)\ \text{Bq}
+\end{equation}
+Ahol a hibát a nyitott ajtajú rendszer hibája alapján számoltam.
+
+\end{multicols}
