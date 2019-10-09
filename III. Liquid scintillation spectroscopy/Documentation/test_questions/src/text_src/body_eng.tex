@@ -35,7 +35,7 @@ And for the $^{14}$C:
     
     \item Q: How do the radiocarbon and the triton is created in our planet?
     \begin{displayquote}
-        A: They're both created in the upper atmosphere by cosmic neutrons hitting $^{14}$N isotopes. If a neutron hits an $^{14}$N nuclei, it can either hit out a proton, and build into the place of it, or it can pull a proton and a neutron out with itself. In the first case the following reaction will take place:
+        A: They're both created in the upper atmosphere by cosmic neutrons hitting $^{14}$N isotopes. If a neutron hits an $^{14}$N nuclei, it can either hit out a proton, and build into the place of it, or it can pull a proton and a neutron out with itself\footnote{This is not totally true. There are some other scenarios, but these two are the most dominant ones.}. In the first case the following reaction will take place:
         \begin{equation}
         ^{14}\text{N} + \text{n}^{0} \to ^{14}\text{C} + \text{p}^{+}
         \end{equation}
@@ -47,15 +47,15 @@ While in the second case, the cosmic neutron will form a tritium nuclei with the
     
     \item Q: Why is the beta-spectrum continuous?
     \begin{displayquote}
-        A: The main difference of $\beta$-decay from other decays, that at the $\beta$-decay, there are two particles emitted instead of one: one $\beta$-particle and a corresponding neutrino or anti-neutrino. However the total released energy is discrete, it is continuously split between the two emitted particles. Due to the very low mass of the neutrino, only the $\beta$-particles energy could be effectively detected, which spectrum thus indeed will be continuous.
+        A: The main difference between the $\beta$-decay and other decays, that in the $\beta$-decay, there are two particles emitted instead of one: one $\beta$-particle and a corresponding neutrino or anti-neutrino. However the total released energy is discrete, it is continuously split between the two emitted particles. Due to the very low mass of the neutrino, only the $\beta$-particles energy could be effectively detected, which spectrum thus indeed will be continuous.
     \end{displayquote}
     
     \item Q: What is the spectrum of the amplitude of the electric pulses during a triton
 measurement?
     \begin{displayquote}
-        A: 
+        A: It is the distribution of the quenched light output.
     \end{displayquote}
-    
+    \newpage
     \item Q: How can the scintillation light be quenched?
     \begin{displayquote}
         A: Quenching can occur as the result of many processes. Eg. the liquid, or the container glass vial can contain contamination. But there are several ways for this.
@@ -64,12 +64,16 @@ measurement?
     \item Q: How can we determine the efficiency of a triton measurement from the measured
 value of the quench?
     \begin{displayquote}
-        A: 
+        A: By measuring a so called "tSIE" (denoted by $L$) parameter. It is a proportion of the light output at lower and at higher light levels:
+        \begin{equation}
+        L = \frac{N_{\text{high}}}{N_{\text{low}}}
+        \end{equation}
+For unquenched sample, this ration is an exact number. If the sample is quenched, then this value will decrease by a known amount. Measuring this deviation, it directly provides us information about the efficiency.
     \end{displayquote}
     
     \item Q: Why is the amplitude of the electric signal proportional to the energy deposited in the vial?
     \begin{displayquote}
-        A: 
+        A: The energy originates from the $\beta$-particle. When it releases its energy, it excites the neighboring atoms and molecules. When they return to their ground state, they emit a photon, which energy is proportional to the excitation energy. This photon's energy then absorbed by the primer and secunder scintillators and totally emitted back into the photomultiplier tube. At the other end, we detect this energy. That's why it is proportional to the energy of the $\beta$-particle.
     \end{displayquote}
     
     \item Q: What are the operating purposes of the cocktail ingredients?
@@ -79,11 +83,11 @@ value of the quench?
     
     \item Q: How does the photomultiplier work?
     \begin{displayquote}
-        A: 
+        A: If a scintillation photon enters the photocathode, it will hit out a "photoelectron", which is then focused into a metal layer, so called "dynode". If a fast photoelectron hits a dynode, 3 "slow" electron will be generated. Then they're accelerated with an electric voltage of about $300$ V and focused into another dynode. The process then starts over, and a beam of exponentially more and more photoelectrons are created by consecutive dynodes. A photomultiplier tube usually contains 10-12 dynodes, which are capable of creating $3^{12}$ electrons at the end of the tube.
     \end{displayquote}
     
     \item Q: How can we discriminate the triton counts from the radiocarbon counts?
     \begin{displayquote}
-        A: 
+        A: The maximal energy of $\beta$-particles for $^{3}$H and $^{14}$C are differs greatly. For $^{3}$H $^{H3}E_{\text{max}} = 18.6$ keV, and for $^{14}$C $^{C14}E_{\text{max}} = 156.5$ keV. If we measure an energy over $18.6$ keV, we can be sure, that it isn't originated from a $^{3}$H decay, but from the background radiation, or from another isotope (in this case from $^{14}$C).
     \end{displayquote}
 \end{enumerate}
