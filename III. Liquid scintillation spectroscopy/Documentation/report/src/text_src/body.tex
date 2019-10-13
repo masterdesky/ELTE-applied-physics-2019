@@ -1,6 +1,6 @@
 \selectlanguage{english}
 \begin{abstract}
-    \noindent Az \emph{Alkalmazott fizikai módszerek laboratórium} harmadik alkalmán a radiokarbon ($^{14}$C izotóp) $\beta$-spektrumát mértük ki folyadékszcintillációs spektroszkópia segítségével. A mérőműszer és a mérési feladatok természetéből fakadóan a labor során elsődlegesen nem aktív mérési munkát végeztünk, hanem megismerkedtünk a $\beta$-bomlás azon elméleti alapjaival, melyek az eredmények kiértékeléséhez elengedhetetlenül szükségesek. Levezettük a $\beta$-spektrum leírásának egy közelítő, nem-relativisztikus modelljét és kiszámítottuk annak átlagos energiáját. A mérés kiértékelése során ellenőriztük a modell helyességét az adatokra történő illesztéssel, valamint hasonlóan vizsgáltuk ezen modell módosított változatát is a Fermi-függvény felhasználásával. Megállapítottuk, hogy a $\beta$-spektrum energiájának várható értéke $\left< E \right> = Q/3$, valamint bebizonyítottuk, hogy $\sqrt{N} \approx \sigma$, ahol $N$ a mérési értékek darabszáma, $\sigma$ pedig azok szórása. Végül a méréshez használt minta megadott $DPM$, és a mérési adatainkból számolt $CPM$ értékek segítségével kiszámítottuk a detektor $\eta$ detektálási hatásfokának mértékét is.
+    \noindent Az \emph{Alkalmazott fizikai módszerek laboratórium} harmadik alkalmán a radiokarbon ($^{14}$C izotóp) $\beta$-spektrumát mértük ki folyadékszcintillációs spektroszkópia segítségével. A mérőműszer és a mérési feladatok természetéből fakadóan a labor során elsődlegesen nem aktív mérési munkát végeztünk, hanem megismerkedtünk a $\beta$-bomlás azon elméleti alapjaival, melyek az eredmények kiértékeléséhez elengedhetetlenül szükségesek. Levezettük a $\beta$-spektrum leírásának egy közelítő, nemrelativisztikus modelljét és kiszámítottuk annak átlagos energiáját. A mérés kiértékelése során ellenőriztük a modell helyességét az adatokra történő illesztéssel, valamint hasonlóan vizsgáltuk ezen modell módosított változatát is a Fermi-függvény felhasználásával. Megállapítottuk, hogy a $\beta$-spektrum energiájának várható értéke $\left< E \right> = Q/3$, valamint bebizonyítottuk, hogy $\sqrt{N} \approx \sigma$, ahol $N$ a mérési értékek darabszáma, $\sigma$ pedig azok szórása. Végül a méréshez használt minta megadott $DPM$, és a mérési adatainkból számolt $CPM$ értékek segítségével kiszámítottuk a detektor $\eta$ detektálási hatásfokának mértékét is.
 \end{abstract}
 \selectlanguage{magyar}
 
@@ -9,7 +9,7 @@
 A $\beta$-bomlás ismerete minden fizikával foglakozó számára alapvetően szükséges kell, hogy legyen. Ez már önmagában jelentős belátást nyújt mind a gyenge kölcsönhatás, mind pedig a neutrínók mibenlétére, mely közül az első az alapvető kölcsönhatások, a második pedig az elemi részekék egyike. Mindkettő az ismert fizikai világot alapvetően meghatározó jelenség és objektum, így ismeretük elengedhetetlen. \par
 A mérés során a $^{14}$C -- hétköznapi nevén radiokarbon -- $\beta$-spektrumát vizsgáltuk ún. folyadékszcintillációs spektroszkópia segítségével. A mérés során az alábbi kérdésekre kerestük a választ:
 \begin{itemize}
-\item[--] Mennyire követik a nem-relativisztikus, valamint a Fermi-függvénnyel kibővített nem-relativisztikus és relativisztikus elméleti modellek a mérés során kimért spektrumot? Mik okozhatják az esetleges eltéréseket?
+\item[--] Mennyire követik a nemrelativisztikus, valamint a Fermi-függvénnyel kibővített nemrelativisztikus és relativisztikus elméleti modellek a mérés során kimért spektrumot? Mik okozhatják az esetleges eltéréseket?
 \item[--] Igaz-e, hogy az energia várható értéke az adott mag $Q$-faktorának harmadával egyenlő, tehát
 	\begin{equation*}
 	\left< E \right> = \frac{Q}{3}\ \text{?}
@@ -24,7 +24,7 @@ A $^{14}$C mintával végül összesen 50 darab, egyenként 2 perc hosszú mér�
 \section{Elméleti alapok}
 A mérés -- az I. rész felsorolásában is olvasható -- első számú célja a $\beta$-bomlás Fermi-féle modelljének vizsgálata volt. Ehhez meg kellett értenünk a $\beta$-spektrum lehetséges leírását. Kiindulásként a Fermi-féle aranyszabályt vehetjük, mely az átmeneti valószínűséget adja meg két kvantumállapot között:
 
-\begin{equation}
+\begin{equation} \label{eq:1}
 w_{k \to v}
 =
 \frac{2 \pi}{\hbar} \left| \left< \Psi_{v} \left| H_{\beta} \right| \Psi_{k} \right> \right|^{2} \varrho_{v} \left( E_{v} \right)
@@ -32,13 +32,13 @@ w_{k \to v}
 Ahol a $k$ és $v$ indexek sorrendben a kezdő és végállapotra utalnak.
 
 \subsection{Alkalmazott közelítések}
-Hogy a számításainkat el tudjuk végezni, a Fermi-szabály kapcsán 5 különböző közelítéssel élünk, melyből következtetünk majd a $\beta$-bomlás végállapoti állapotsűrűségére. Ezek a közelítések az alábbiak:
+Hogy a számításainkat el tudjuk végezni, a Fermi-szabály kapcsán 5 különböző közelítéssel élünk, melyből következtetünk majd a $\beta$-bomlás $dn\left( E \right) / dE$ végállapoti állapotsűrűségére. Ezek a közelítések az alábbiak:
 
 \begin{enumerate}
 \item Csak megengedett átmenetekről beszélünk. \par
-Ez esetben a neutrínó és az elektron teljes pályaperdülete $L = 0$. Ekkor a Fermi-féle aranyszabályban szereplő mátrix elem értéke:
+Ez esetben a neutrínó és az elektron teljes pályaperdülete $L = 0$. Ekkor a Fermi-féle aranyszabályban szereplő mátrixelem értéke:
 
-\begin{equation}
+\begin{equation} \label{eq:2}
 \left| \left< \Psi_{v} \left| H_{\beta} \right| \Psi_{k} \right> \right|^{2}
 =
 \left| H_{kv} \right|^{2}
@@ -47,33 +47,33 @@ Ez esetben a neutrínó és az elektron teljes pályaperdülete $L = 0$. Ekkor a
 \end{equation}
 Továbbiakban ebből levezethető a mátrixelem pontos értéke is, mely indikálni fogja a különbséget a Fermi-- (F) és a Gamow--Teller-típusú (GT) átmenetek között:
 
-\begin{equation}
+\begin{equation} \label{eq:3}
 \left| H_{kv} \right|^{2}
 =
 \left( g_{V}^{2} M_{F}^{2} + g_{A}^{2} M_{GT}^{2} \right) \frac{1}{V^{2}}
 \end{equation}
 Ahol $g_{V}$ a vektor típusú, míg $g_{A}$ az axiálvektor típusú kölcsönhatás csatolási állandója.
 
-\item Az elektron, valamint a neutrínó hullámfüggvényét nem-relativisztikus síkhullámként kezeljük. \par
+\item Az elektron, valamint a neutrínó hullámfüggvényét nemrelativisztikus síkhullámként kezeljük. \par
 $\beta$-bomlás során a mag vonzása a maghoz közel az elektron hullámfüggvényét valós esetben torzítaná, azonban ebben a közelítésben ettől eltekintünk. Ezt az eltérést a Fermi-függvény bevezetésével korrigáljuk. Ekkor a két részecske hullámfüggvénye kifejezhető az alábbi módokon:
 
-\begin{equation}
+\begin{equation} \label{eq:4}
 \phi_{e} \left( \underline{r}_{e} \right)
 =
 N_{e} e^{-\frac{i}{\hbar} \underline{p}_{e} \underline{r}_{e}}
 \end{equation}
-\begin{equation}
+\begin{equation} \label{eq:5}
 \phi_{\nu} \left( \underline{r}_{\nu} \right)
 =
 N_{\nu} e^{-\frac{i}{\hbar} \underline{p}_{\nu} \underline{r}_{\nu}}
 \end{equation}
 Az állapotok száma egy fázistérfogatban ekkor könnyen felírható mindkét részecske esetére:
-\begin{equation}
+\begin{equation} \label{eq:6}
 dn_{e} \left( E \right)
 =
 \frac{V * 4 \pi p_{e}^{2} dp_{e}}{h^{2}}
 \end{equation}
-\begin{equation}
+\begin{equation} \label{eq:7}
 dn_{\nu} \left( E_{\nu} \right)
 =
 \frac{V * 4 \pi p_{\nu}^{2} dp_{\nu}}{h^{2}}
@@ -81,7 +81,7 @@ dn_{\nu} \left( E_{\nu} \right)
 
 \item Az e$^-$ és $\nu$ kirepülési irányát függetlennek vesszük. \par
 Ekkor az állapotszám adott fázistérfogatban a következő:
-\begin{align}
+\begin{align} \label{eq:8}
 dn \left( E, E_{\nu} \right)
 &=
 dn_{e} dn_{\nu}
@@ -91,36 +91,49 @@ p_{e}^{2} dp_{e} p_{\nu}^{2} dp_{\nu}
 &=
 p_{e}^{2} \frac{dp_{e}}{dE} p_{\nu}^{2} \frac{dp_{\nu}}{dE_{\nu}} dE dE_{\nu}
 \end{align}
-Itt csak arányosságot írtam fel, az egyenlet jobb oldala valójában egy sok tagból álló konstanssal van megszorozva még.
+Ahol felhasználtam a \ref{eq:6}. és \ref{eq:7}. egyenletekben szereplő azonosságot. Itt csak arányosságot írtam fel, az egyenlet jobb oldala valójában egy sok tagból álló konstanssal van megszorozva még.
 
 \item A leánymag visszalökődését elhanyagoljuk. A bomlás $Q$ faktorát ekkor az elektron és neutrínó energiájának összegeként kapjuk:
 
-\begin{equation}
+\begin{equation} \label{eq:9}
 Q = E + E_{\nu}
 \end{equation}
 
 \item A neutrínó nyugalmi tömegét zérusnak vesszük. \par
-Ekkor a neutrínót ún. \q{ultrarelativisztikus} módon kezeljük, impulzusát ilyenkor a $p_{\nu} = E_{\nu}/c$ képlet adja meg.
+Ekkor a neutrínót ún. \q{ultrarelativisztikus} módon kezeljük, impulzusát és annak energia szerinti deriváltját ilyenkor az alábbi összefüggések adják:
+
+\begin{equation} \label{eq:10}
+p_{\nu}
+=
+\frac{E_{\nu}}{c}
+\end{equation}
+
+\begin{equation} \label{eq:11}
+\frac{dp_{\nu}}{dE}
+=
+\frac{1}{c}
+\end{equation}
+
 \end{enumerate}
-Ezek alapján mind a nem-relativisztikus, mind pedig a relativisztikus esetre levezethetjük az állapotsűrűséget és így a $\beta$-bomlás energiaspektrumát, attól függően, hogy az elektron impulzusára a nem-relativisztikus, vagy relativisztikus összefüggést használjuk. Első esetben az impulzus a következő:
-\begin{equation}
+Ezek alapján mind a nemrelativisztikus, mind pedig a relativisztikus esetre levezethetjük az állapotsűrűséget és így a $\beta$-bomlás energiaspektrumát, attól függően, hogy az elektron impulzusára a nemrelativisztikus, vagy relativisztikus összefüggést használjuk. Első esetben az impulzus a következő:
+\begin{equation} \label{eq:12}
 p_{e}
 =
 \sqrt{2mE}
 \end{equation}
-\begin{equation}
+\begin{equation} \label{eq:13}
 \frac{dp_{e}}{dE}
 =
 \frac{m}{\sqrt{2mE}}
 \end{equation}
 Míg második esetben az alábbi:
 
-\begin{equation}
+\begin{equation} \label{eq:14}
 p_{e}
 =
 \frac{1}{c} \sqrt{\left( E + m_{e} c^2 \right)^2 - m_{e}^{2} c^{4}}
 \end{equation}
-\begin{equation}
+\begin{equation} \label{eq:15}
 \frac{dp_{e}}{dE}
 =
 \frac{1}{c} \frac{E + m_{e} c^2}{\sqrt{\left( E + m_{e} c^2 \right)^2 - m_{e}^{2} c^{4}}}
@@ -128,6 +141,28 @@ p_{e}
 A részletesen számolások az \hyperref[appendix:A]{A.} függelékben találhatóak.
 
 \subsection{Várható energiaérték}
+A várható érték definíciója alapján megadható a $\beta$-spektrum energiájának várható értéke az alábbi módon:
+
+\begin{equation} \label{eq:16}
+\left< E \right>
+=
+\int_{0}^{Q} E P \left( E \right) dE
+\end{equation}
+Ahol $P \left( E \right)$ az adott energiájú átmenet valószínűsége. Ez kiszámítható a $dn \left( E \right)/dE$ állapotsűrűség, teljes spektrumra vett összegével történő normálásával:
+
+\begin{equation} \label{eq:17}
+P \left( E \right)
+=
+\frac{dn \left( E \right) / dE}{\int_{0}^{Q} \left[ dn \left( E \right) / dE \right] dE}
+\end{equation}
+Az energia várható értéke a nemrelativisztikus esetből kapott számítás alapján:
+
+\begin{equation} \label{eq:18}
+\left< E \right>
+=
+\frac{Q}{3}
+\end{equation}
+A teljes számítás az \hyperref[appendix:A]{A.} függelékben található.
 
 \section{Kiértékelés}
 
