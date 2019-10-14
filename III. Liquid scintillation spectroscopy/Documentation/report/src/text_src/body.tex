@@ -165,9 +165,35 @@ Az energia várható értéke a nemrelativisztikus esetből kapott számítás a
 A teljes számítás az \hyperref[appendix:A]{A.} függelékben található.
 
 \section{Kiértékelés}
+\subsection{Elméleti modell vizsgálata}
+Első feladatunk az $\beta$-spektrumokra történő illesztés és annak vizsgálata volt. Ez explicite a $dn \left( E \right)$ értékek integráltjából kapott $n \left( E \right)$ állapotszámok energiafüggő illesztését takarta jelen esetben. A \ref{fig:3}-\ref{fig:6}. ábrákon ezen illesztések láthatóak, melyek közül a \ref{fig:3}. és \ref{fig:4}. ábra a nemrelativisztikus esetet, míg a \ref{fig:5}. és \ref{fig:6}. ábrák a relativisztikus eset illesztését ábrázolják. A nemrelativisztikus eset első ábrája kivételével mindegyik helyen igénybe vettem a Fermi-függvényt, hogy pontosítsam az illesztést. (Magyarán relativisztikus esetben nem is dolgoztam a Fermi-függvény nélküli verzióval.) \par
+Az elméletből azt vártuk, hogy a legrosszabb illesztés a Fermi-függvény nélküli nemrelativisztikus esethez tartozik. Ezt követi a Fermi-függvénnyel bővített verzió, majd a szimpla relativisztikus és legjobb illesztésként a Fermi-függvénnyel bővített relativisztikus formula. Míg szemmel is egyértelműen látható módon a valósághoz elméletben is legközelebb álló, relativisztikus, Fermi-függvénnyel kibővített, \ref{fig:5}. ábrán látható görbe illeszkedik rá legjobban a kimért adatsorra, addig annak hibáját sajnos numerikusan nem tudtam meghatározni. Ennek oka az általam használt \texttt{curve\_fit} függvény hiányossága, mely a \texttt{Python 3.7}-es verziójának \texttt{scipy} könyvtárának része. Ez egy, a nem-lineáris négyzetes hibákat iteratív módon minimalizáló algoritmust takar, mely az optimalizált paraméterek konkrét értékei mellett kiszámolja azok kovarianciamátrixát is, mely diagonálisában található elemek gyökét tekinti az egyes paraméterek hibáinak. Míg a paraméterértékek kiszámítása viszonylag jól működik, addig bonyolultabb esetekben a kovarianciamátrixot -- és így a hibák értékét -- a függvény nem képes meghatározni. Kivételes szerencsénk van, hogy jelen esetben az illesztések közül egyértelműen el lehet dönteni, hogy az említett, \ref{fig:5}. ábrán látható függvény a legjobb, ahogy azt az elmélet alapján el is vártuk. Ennek illesztett görbéje a GitHubomon megtalálható \citep{github}. \par
+Az egyes spektrumokon egy darab markáns eltérés látható az elméleti görbétől a $35$ -- $50$ keVee sávban. Ez a jól látható kiugrás a két fotoelektron sokszorozóval rendelkező mérőműszerek koincidencia vizsgálatának karakterisztikájából fakad és tipikusan az ábrákon is szereplő kiemelkedést okoz.
 
+\subsection{A várható energiaérték megmérése}
+Második feladatunk annak bizonyítása volt, hogy a $\beta$-spektrum energiájának várható értéke valóban körülbelül $Q/3$. Ehhez felhasználtam a \ref{eq:68}. egyenletet, mely alapján bin szélességű téglalapokra felosztottam a $49$ mérés átlagából kapott görbét, majd azok területét összeadva közelítettem a görbe alatti integrál értékét. Az egyenlet alapján ezt az átlagértékek összegével leosztva, megkapjuk a mérésből számított végeredményünket. A $^{14}C$ esetében $Q=156,5$ keVee érték mellett elméletileg a
+
+\begin{equation}
+\left< E \right>_{\text{elm}}
+=
+\frac{Q}{3}
+=
+52,1\dot{6}\ \text{keVee}
+\end{equation}
+értéket várjuk eredményül. A mérésből a fenti számítás után ugyanezen értékre
+\begin{equation}
+\left< E \right>_{\text{mér}}
+\approx
+50,013\ \text{keVee}
+\end{equation}
+eredményt kaptam. Ez $4,13\%$-al tér el az elméleti értéktől, így egyértelműen, hibahatáron belüli jó közelítésnek vehető.
+
+\subsection{A szórás közelítő értéke}
+Harmadik és egyben utolsó feladatunk a szórás és a mintavételezési elemszám gyöke közti ekvivalencia feltárása volt. Ezt az egyes energia-\emph{bin}ekbe kerülő elemek szórásának és a \emph{bin}be eső mérési értékek gyökének összehasonlításával vizsgáltam meg. Várakozásaink alapján, ha az adott \emph{bin}-hez tartozó $\sigma$ szórás-, valamint $\sqrt{N}$ darabszámértékeket egymás függvényében ábrázoljuk, akkor egy $45^{\circ}$ egyenest fogunk eredményül kapni. \par
+A kapott ponthalmazt a \ref{fig:7}. ábrán vizualizáltam, melyen jól látható a lineáris kapcsolat. Az adatpontokat a $\left[ 0, 1 \right]$ intervallumba normáltam, melyben az összefüggés jóságát vizsgálandó a pontok átlagtól vett négyzetes eltérésük gyökét számítottam ki. Ez az érték $RMSE = 0,047$ lett, mely teljes mértékben elfogadhatónak számít.
 
 \section{Diszkusszió}
-
+Habár az elméleti görbére történő illesztés során a manuális levezetésből kapott eredmény rosszabbul szerepelt, mint a géppel történő szimbolikus számítás, végeredményben nagyon jó közelítését sikerült adnom a $\beta$-spektrum alakjára (ld. \ref{fig:5}. ábra). \par
+Ezen kívül a kirótt feladataimat sikeresen elvégeztem, az $\left< E \right> = Q/3$ azonosságot és a $\sigma = \sqrt{N}$ ekvivalenciát bebizonyítottam. (Végül de nem utolsó sorban pedig remélhetőleg egy fél magfizika tételt is megtanultam.)
 
 \end{multicols}
