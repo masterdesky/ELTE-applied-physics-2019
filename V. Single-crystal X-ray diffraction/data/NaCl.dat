@@ -1,0 +1,130 @@
+[Image]
+Creation Time=Thu, 07 Nov 2019 10:07:04 GMT
+Author=Elysia@DESKTOP-J6S0DOQ.DESKTOP-J6S0DOQ
+Software=VistaEasy
+Source=K378561001
+
+[Image_X]
+Hight=2055
+Width=2072
+AvgPix=0
+DeviceID=K378561001
+MaxPix=65533
+MinPix=0
+ModeUuid=6
+Offset_X=2692
+Pixelsize=50500
+PixelsizeX=50000
+PixelsizeY=51000
+ProcessTime=61
+Projection=1.000000
+Rotation=0
+ScanDate=20191107
+ScanTime=100704
+SlotMask=63
+Time_Day=7
+Time_h=10
+Time_m=7
+Time_Month=11
+Time_s=4
+Time_Year=2019
+
+[Image_XHEAD]
+0000=5b 54 6d 70 49 6d 67 49 6e 66 6f 5d 0d 0a 49 64
+0010=65 6e 74 69 66 69 65 72 53 74 72 69 6e 67 3d 4e
+0020=6f 20 69 64 65 6e 74 69 66 69 65 72 20 73 74 72
+0030=69 6e 67 0d 0a 44 65 76 69 63 65 55 49 44 3d 34
+0040=32 30 35 33 30 36 30 39 0d 0a 00
+size=75
+
+[Mode]
+Binning=1
+CompressionLevel=0
+Deflash=5000
+EraseEnable=0
+Interpolate_y=1
+LampOnTime=12
+Laser=5
+MaxImageRatio=21
+MinImageArea=400e-6
+Mirror=0
+ModeFlags=0x30000008
+ModeName=sensitive 50µm resolution
+ModeName_de=Sensitive 50µm Auflösung
+ModeName_en=sensitive 50µm resolution
+ModeUuid=6
+Pentaspd=2000
+PMT_HV=1150
+Range=AutoGrayRange lo=0 up=0 htyp=-1
+Resolution=50
+Rotation=0
+Scale=1
+Script=
+Threshold=65535
+WriteMethod=line
+
+[Setting]
+DeviceID=K378561001
+ImageWriteMode=line
+PixLine=7291
+Res_X=0.000050
+Res_Y=0.000051
+
+[RawImageParamSet]
+Binning=1
+CompressionLevel=0
+Deflash=5000
+EraseEnable=0
+Interpolate_y=1
+LampOnTime=12
+Laser=5
+MaxImageRatio=21
+MinImageArea=400e-6
+Mirror=0
+ModeFlags=0x30000008
+ModeName=sensitive 50µm resolution
+ModeName_de=Sensitive 50µm Auflösung
+ModeName_en=sensitive 50µm resolution
+ModeUuid=6
+Pentaspd=2000
+PMT_HV=1150
+Range=AutoGrayRange lo=0 up=0 htyp=-1
+Resolution=50
+Rotation=0
+Scale=1
+Script=
+Threshold=65535
+WriteMethod=line
+ParamName=sensitive 50µm resolution
+ImgTypes=unknown
+
+[imageinfo]
+Pixel_X=2072
+Pixel_Y=2055
+Res_X=50000
+Res_Y=51002
+Pixelsize=50500
+Used_projection_factor=1
+BitsPerPixel=16
+CreationTime=Thu, 07 Nov 2019 10:07:04 GMT
+time_year=2019
+time_month=11
+time_day=07
+time_h=10
+time_m=07
+time_s=04
+ScanDate=20191107
+ScanTime=100704
+ScanmodeNr=6
+ScannerSerial=K378561001
+Slot=0
+Start_Slot=2692
+MaxPix=65533
+AvgPix=0
+BlackMask=0
+Identifierstring=No identifier string
+ExtraInfo=
+PhotometricInterpretation=MONOCHROME2
+LowPixelValueMeansLowDose=1
+DDI=4848
+
