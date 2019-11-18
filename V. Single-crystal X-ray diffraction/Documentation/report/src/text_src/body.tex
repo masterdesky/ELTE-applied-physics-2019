@@ -20,12 +20,91 @@ Az image plate (ún. PSP plate -- photostimulable phosphor plate), kialakítás�
 
 \subsection{OrientExpress}
 A rendelkezésre álló képeket egy \q{OrientExpress} nevű szoftverrel dolgoztuk ezután fel, mely képes beazonosítani a mért anyag rácsszerkezetét, adott erősítési pontok, képeken történő megadásának segítségével. A program használata azonban sajnos nem triviális. A képeken található erősítési pontok adott hányada származhat akár a mintatartóról, akár valamilyen szennyeződésből is. Ilyen \q{hibás} értékeket is belevéve a program számára megadott pontok közé, megzavarhatja a rácsszerkezet beazonosításának folyamatát, így a kapott eredmények szinte teljesen biztosan nem lesznek megfelelőek. Sokszor megesik azonban, hogy még megfelelő pontok megadásával se kapjuk meg a számunkra szükséges végeredményt, így időt kell fordítani a kiértékelés ezen szakaszára. \par
-Számos próbálgatás után végül mind a három mintára megkaptuk az azok rácsszerkezetét pontosan leíró Miller-indexeket. Ezeket a függelékben található  (1) - (3) ábrákon közlök.
+A szoftver segítségével a PSP lapkáról beolvasott képek kiértékelésének menete az adott anyagra jellemző szerkezeti adatok megadásával kezdődött. Ezeket a laborvezetőtől készen megkaptuk, melyet az OrientExpress számára meg is adhattunk bemeneti adatként. Következő lépésben az adott mintához tartozó képeket töltöttük be a programba, amiket több dolgot kellett megadjunk:
+\begin{enumerate}
+	\item A röntgen nyaláb, képen látható pozícióját
+	\item A kép nagyságrendjét cm-ben
+	\item Néhány tetszőlegesen választott erősítési pont pozícióját
+\end{enumerate}
+Ezeket mind egérmutatóval történő kattintás útján vehettük fel bemeneti adatként. Ezt követően ezen adatok alapján a program megpróbálta meghatározni a rácsszerkezetet leíró Miller-indexeket. A legrizikósabb lépés ez volt, ugyanis az előzőleg kiválasztott pontok függvényében minden esetben más és más Miller-indexeket ajánlott fel a szoftver megoldásként. Végezetül egy sztereografikus megjelenítési módba váltva be tudtuk állítani a diffrakciós kép pozícióját olyan formában, hogy az $x$-$y$-$z$ tengelyek közül tetszőleges kettő a kép síkjára párhuzamos, míg a harmadik arra merőleges legyen. Ismerve az ezen forgatáshoz szükséges szögek értékeit, ez pontosan megadta a rácsszerkezet orientációját a röntgennyalábhoz viszonyítva. \par
+Számos próbálgatás után végül mind a három mintára megkaptuk az azok rácsszerkezetében található atomok helyzetét. A Laue-felvételek sorrendben a szilícium-, a gyémánt-, valamint a sómintához megtalálhatóak az (\ref{fig:1})-es, (\ref{fig:3})-as és (\ref{fig:5})-ös ábrákon, míg azonos sorrendben a sztereografikus felvételek a (\ref{fig:2})-es, (\ref{fig:4})-es és (\ref{fig:6})-os ábrákon láthatóak.
 
-\section{a}
+\section{Eredmények}
+A szilícium lapka orientációjának megállapításához az alábbi Miller-indexszel rendelkező erősítési pontokat választottam ki:
 
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{5}{|c|}{Miller-indexek} \\ \hline \hline
+h & -5 & -5 & -2 & -3 \\
+k & -5 & -3 & -1 & -3 \\
+l & -3 & -5 & -1 & -5 \\
+\hline
+\end{tabular}
+\captionof{table}{A szilíciumlap kristályrács orientációjának kiszámításához felhasznált Miller-indexű pontok.} \label{table:1}
+\end{center}
+A kapott szerkezetet sztereografikus projekcióban ábrázolva beforgattam a megfelelő pozícióba. A forgatási szögek az alábbiak voltak:
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{3}{|c|}{Forgatási szögek} \\ \hline \hline
+x            & y             & z            \\ \hline
+$35^{\circ}$ & $-35^{\circ}$ & $45^{\circ}$ \\
+\hline
+\end{tabular}
+\captionof{table}{A szilíciumlapka rácsának sztereografikus módban történő forgatási szögeinek értéke. Az egyes oszlopok az adott tengely körül történő forgatást jelentik.} \label{table:2}
+\end{center}
+Hasonlóan az előzőhöz a gyémántdarab orientációjának vizsgálatához az alábbi pontokat választottam:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{5}{|c|}{Miller-indexek} \\ \hline \hline
+h & -5 & -3 & -7 & -3 \\
+k & -3 & -3 & -1 & -6 \\
+l & -2 & -1 & -6 & -5 \\
+\hline
+\end{tabular}
+\captionof{table}{A gyémántrács orientációjának kiszámításához felhasznált Miller-indexű pontok.} \label{table:3}
+\end{center}
+Sztereografikus pozícióban alábbi szögű forgatásokat végeztem el, hogy hasonló
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{3}{|c|}{Forgatási szögek} \\ \hline \hline
+x            & y             & z            \\ \hline
+$54^{\circ}$ & $-35^{\circ}$ & $45^{\circ}$ \\
+\hline
+\end{tabular}
+\captionof{table}{A gyémántrács sztereografikus módban történő forgatási szögeinek értéke. Az egyes oszlopok az adott tengely körül történő forgatást jelentik.} \label{table:4}
+\end{center}
+Végül a sókristályra kapott értékek a fentiekhez hasonlóan a következők:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{5}{|c|}{Miller-indexek} \\ \hline \hline
+h & -4 & -4 & -2 & -1 \\
+k & -1 & -2 & -1 &  0 \\
+l &  0 & -1 &  0 &  0 \\
+\hline
+\end{tabular}
+\captionof{table}{A sókristály orientációjának kiszámításához felhasznált Miller-indexű pontok.} \label{table:5}
+\end{center}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{3}{|c|}{Forgatási szögek} \\ \hline \hline
+x            & y             & z            \\ \hline
+$133^{\circ}$ & $0^{\circ}$ & $1^{\circ}$   \\
+\hline
+\end{tabular}
+\captionof{table}{A sókristály sztereografikus módban történő forgatási szögeinek értéke. Az egyes oszlopok az adott tengely körül történő forgatást jelentik.} \label{table:6}
+\end{center}
 
 \section{Diszkusszió}
-
+Míg szemmel vizsgálva a gyémánt és a szilícium esetén elég pontosan sikerült megállapítani a rácsszerkezetben található atomok pozícióját, addig a a sóminta esetén csak egy közelítő becslést sikerült az OrientExpress szoftverrel megadni. A mérési eredmények pontossága tovább javítható lenne újabb, jobb minőségű felvételek készítésével, vagy még inkább korszerűbb elemző szoftverek alkalmazásával. Sajnos a labormérés keretében ezek nem álltak rendelkezésünkre, így itt az általam elért legjobb, azonban objektíve nem teljesen pontos eredményeket kellett közölnöm.
 
 \end{multicols}
