@@ -1,110 +1,111 @@
 \selectlanguage{english}
 \begin{abstract}
-    \noindent Az \emph{Alkalmazott fizikai módszerek laboratórium} hatodik és egyben utolsó alkalmán egy Cu anyagdarabon végzett röntgen vonalprofil analízis mérés eredményeinek kiértékelését végeztük el. A labor során 
+    \noindent Az \emph{Alkalmazott fizikai módszerek laboratórium} hatodik és egyben utolsó alkalmán egy Cu anyagdarabon végzett röntgen vonalprofil analízis mérés eredményeinek kiértékelését végeztük el. A labor során elkészítettük a minta esetében a Williamson-Hall, valamint módosított Williamson-Hall ábráját, valamint meghatároztuk mikroszerkezeti paramétereit a CMWP módszer segítségével.
 \end{abstract}
 \selectlanguage{magyar}
 
 \begin{multicols}{2}
 \section{Bevezetés}
-A röntgendiffrakció különböző módszerei az anyag, annak molekuláris szerkezetének nagyságrendjében történő feltérképezését teszi lehetővé, melyet számos tudományterületben széles körűen alkalmaznak. \par
-A mérés során az ún. Laue-féle diffrakció módszerét alkalmaztuk, mely tipikusan a feladatunkhoz hasonlóan, egykristályok rácsszerkezetének orientációját feltérképezendő használatos.
+A röntgensugárzással és annak diffrakciójának vizsgálatával történő analízis különböző módszerei az anyag, annak molekuláris szerkezetének nagyságrendjében történő feltérképezését teszi lehetővé, melyet számos tudományterületben széles körűen alkalmaznak. \par
+A mérés során az ún. röntgen vonalprofil analízis módszerével ismerkedtünk meg, mely az anyag kristálysíkjai által létrehozott diffrakciós csúcsok vizsgálatával próbál az anyag mikroszerkezetére vonatkozó következtetéseket levonni.
 
 \section{Technikai részletek}
-A mérés során egy többfunkciós berendezést használtunk, mely mind pordiffrakciós, mind pedig Laue-diffrakciós mérésre alkalmas volt. Az általunk felhasznált lágy röntgensugárzást egy röntgen kisülési cső hozta létre, melyet $40$ keV feszültség és $20$ mA áramerősség alatt működtettünk. A kisülési cső oldalán a sugárzás egy vékony berillium \q{ablakon} keresztül távozott, mely túlhevülését elkerülendő, a rendszert folyamatosan hűtöttük. Túlmelegedés esetén a berilliumlapka könnyen széttörik, mely a kisülési cső részleges tönkremenetelét is jelentené egyben. \par
-A mérőműszerből távozó sugárzás irányát egy fluoreszenciás lapka segítségéve kalibráltuk, mely alapján megállapítható volt, hogy a kijövő sugár viszonylag vékony, nagyságrendileg hozzávetőlegesen 2 mm átmérőjű. \par
-A mérésben úgynevezett hátsó állású képeket készítettünk, ami azt takarja, hogy a mintáról visszafelé szóródó sugárzást észleltük, melyet egy $9,4$ cm $\times$ $9,4$ cm méretű \q{image plate} lapka használatával fogtunk fel. Végül ezen lap kiolvasásával jutottunk hozzá a kiértékeléshez szükséges adatokhoz.
+\subsection{Mérési összeállítás}
+A labor során a mérőműszerrel nem kellett dolgoznunk, azt csak megtekintettük a laborvezető kíséretében, aki röviden ismertette annak működését. \par
+Egy valódi mérés során a mintát egy precíziós goniométerre szerelt állványra van rögzítve. Ezzel nagy pontossággal beállítható a minta és a röntgensugár relatív pozíciója, mellyel különböző rácssík-seregek vizsgálata válik a minta precíz forgatásával lehetségessé. A mintából diffraktálódó röntgensugárzást egy ún \q{image plate} segítségével fogjuk fel, mely az adott mérés természetéből fakadóan lehet lapos, vagy körívszerűen hajlított is. Jelen esetben egy utóbbi image plate segítségével végzett mérés kiértékelésén dolgoztunk. \par
+A mérés során a mintát lassan körbeforgatják és így a beesési szög függvényében kimérhetővé válnak az diffrakciós csúcsok maximumai és azok szélessége, mely információkból következtethetünk a rácssíkok elhelyezkedésére és a vizsgált anyag mikroszerkezetére.
 
-\section{A kiértékelés menete}
 \subsection{Image plate}
 Az image plate (ún. PSP plate -- photostimulable phosphor plate), kialakításából fakadóan egy digitális tároló eszköz. Röntgenbesugárzás hatására a lapka érintett területein található fotoérzékeny anyag (sok esetben európium) atomjai gerjesztett állapotba kerülnek és ott ragadnak. Ezek a gerjesztéshez használtnál alacsonyabb frekvenciájú, gerjesztésre már nem képes sugárzás hatására visszaállnak eredeti állapotukba. Ekkor karakterisztikus (európium esetén $400$ nm hullámhosszú) sugárzást bocsájtanak ki, mely fotonok intenzitását pontosan megmérhetjük, ezekből kapva egy végleges, digitális képet. Végezetül erős, megvilágított szobában található fénnyel azonos intenzitású megvilágítás hatására a lapkán található információ teljesen \q{kitörlődik} és felhasználható további mérésekre.
 
-\subsection{OrientExpress}
-A rendelkezésre álló képeket egy \q{OrientExpress} nevű szoftverrel dolgoztuk ezután fel, mely képes beazonosítani a mért anyag rácsszerkezetét, adott erősítési pontok, képeken történő megadásának segítségével. A program használata azonban sajnos nem triviális. A képeken található erősítési pontok adott hányada származhat akár a mintatartóról, akár valamilyen szennyeződésből is. Ilyen \q{hibás} értékeket is belevéve a program számára megadott pontok közé, megzavarhatja a rácsszerkezet beazonosításának folyamatát, így a kapott eredmények szinte teljesen biztosan nem lesznek megfelelőek. Sokszor megesik azonban, hogy még megfelelő pontok megadásával se kapjuk meg a számunkra szükséges végeredményt, így időt kell fordítani a kiértékelés ezen szakaszára. \par
-A szoftver segítségével a PSP lapkáról beolvasott képek kiértékelésének menete az adott anyagra jellemző szerkezeti adatok megadásával kezdődött. Ezeket a laborvezetőtől készen megkaptuk, melyet az OrientExpress számára meg is adhattunk bemeneti adatként. Következő lépésben az adott mintához tartozó képeket töltöttük be a programba, amiket több dolgot kellett megadjunk:
-\begin{enumerate}
-	\item A röntgen nyaláb, képen látható pozícióját
-	\item A kép nagyságrendjét cm-ben
-	\item Néhány tetszőlegesen választott erősítési pont pozícióját
-\end{enumerate}
-Ezeket mind egérmutatóval történő kattintás útján vehettük fel bemeneti adatként. Ezt követően ezen adatok alapján a program megpróbálta meghatározni a rácsszerkezetet leíró Miller-indexeket. A legrizikósabb lépés ez volt, ugyanis az előzőleg kiválasztott pontok függvényében minden esetben más és más Miller-indexeket ajánlott fel a szoftver megoldásként. Végezetül egy sztereografikus megjelenítési módba váltva be tudtuk állítani a diffrakciós kép pozícióját olyan formában, hogy az $x$-$y$-$z$ tengelyek közül tetszőleges kettő a kép síkjára párhuzamos, míg a harmadik arra merőleges legyen. Ismerve az ezen forgatáshoz szükséges szögek értékeit, ez pontosan megadta a rácsszerkezet orientációját a röntgennyalábhoz viszonyítva. \par
-Számos próbálgatás után végül mind a három mintára megkaptuk az azok rácsszerkezetében található atomok helyzetét. A Laue-felvételek sorrendben a szilícium-, a gyémánt-, valamint a sómintához megtalálhatóak az (\ref{fig:1})-es, (\ref{fig:3})-as és (\ref{fig:5})-ös ábrákon, míg azonos sorrendben a sztereografikus felvételek a (\ref{fig:2})-es, (\ref{fig:4})-es és (\ref{fig:6})-os ábrákon láthatóak.
+\section{A kiértékelés menete}
+A kiértékelést tulajdonképpen több, célirányosan megírt, az ELTÉ-n elérhető szoftver használatával végeztük el. Első lépésben az image plate-ről beolvasott képeket alakítottuk át számunkra használható formába. Az előhívott képeken $7$ különböző rácssíkból származó diffrakciós csúcs volt észlelhető. Ezeket a program és a Cu-re vonatkozó diffrakciós táblázat segítségével azonosítottuk és egy szög-intenzitás függvénnyé átalakítva azokat összefűztük. Továbbiakban az Origin szoftver segítségével kiszámítottuk az egyes csúcsok integrálját és ezzel meghatároztuk a $\Delta \left( 2 \Theta \right)$ értéket, melyet a Williamson-Hall ábra elkészítéséhez használtunk fel. Az image plate szakaszosan történő kiolvasásából kapott nyers eredmények a (\ref{fig:1})-es ábrán találhatóak. Az ábrából látszik többek között az is, hogy az itt használt szoftver a különböző beolvasásokat egy közös háttérre helyezi, majd azok között a hiányzó részeket megfelelő módon kiegészíti.
 
-\section{Eredmények}
-A szilícium lapka orientációjának megállapításához az alábbi Miller-indexszel rendelkező erősítési pontokat választottam ki:
+\subsection{Williamson-Hall ábrázolás}
+A szimpla Williamson-Hall ábrázolás során az egyes csúcsok FWHM értékét (félértékszélesség) ábrázoljuk a diffrakciós vektor hosszának függvényében. Ennek az ábrázolásnak a sajátossága, hogy a diffrakciós csúcsok kiszélesedését kizárólag a szemcseméretből származó hatást vesszük figyelembe. \par
+Ehhez előbb ki kell számítanunk a félértékszélességet:
+
+\begin{equation}
+\text{FWHM}
+=
+\frac{\cos \left( \Theta \right) * \Delta \left( 2 \Theta \right)}{\lambda} 
+\end{equation}
+Ahol $\lambda$ a diffrakcióhoz használt röntgensugárzás hullámhossza, jelen esetben
+
+\begin{equation*}
+\lambda
+=
+0.15406\ \text{m}^{-9}
+\end{equation*}
+Az egyes $\Theta$ szögek értékét nem mi határoztuk meg, hanem egy kész mérésből származó táblázat alapján azonosítottuk be őket. Ez alapján az egyes $hkl$ rácssíkokhoz tartozó diffrakciós csúcsok pozíciói az alábbiak voltak:
 
 \begin{center}
-\begin{tabular}{|c|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|}
 \hline
-\multicolumn{5}{|c|}{Miller-indexek} \\ \hline \hline
-h & -5 & -5 & -2 & -3 \\
-k & -5 & -3 & -1 & -3 \\
-l & -3 & -5 & -1 & -5 \\
-\hline
+$2 \Theta$ [$^{\circ}$] & $h$ & $k$ & $l$ \\ \hline\hline
+$43.297$                & 1   & 1   & 1 \\
+$50.433$                & 2   & 0   & 0 \\
+$74.13$                 & 2   & 2   & 0 \\
+$89.931$                & 3   & 1   & 1 \\
+$95.139$                & 2   & 2   & 2 \\
+$116.919$               & 4   & 0   & 0 \\ \hline
 \end{tabular}
-\captionof{table}{A szilíciumlap kristályrács orientációjának kiszámításához felhasznált Miller-indexű pontok.} \label{table:1}
 \end{center}
-A kapott szerkezetet sztereografikus projekcióban ábrázolva beforgattam a megfelelő pozícióba. A forgatási szögek az alábbiak voltak:
+A kapott FWHM adatokból végül megkapható a diffrakciós vektor hossza az egyes rácssíkokhoz tartozó diffrakciók esetében:
 
+\begin{equation}
+\left| \boldsymbol{g} \right|
+=
+\frac{2 \sin \left( \Theta \right)}{\lambda}
+\end{equation}
+Ezek függvényében ábrázolhatjuk az egyes FWHM értékeket, melyre megkapjuk az RVA mérés Williamson-Hall ábráját, mely a (\ref{fig:3})-as képen látható. Ezt tovább pontosítandó, figyelembe kell vennünk a diffrakciós csúcsok, diszlokációkból eredő szélesedését is, ezzel megalkotva a módosított Williamson-Hall ábrázolást. Ehhez a $g^{2} \overline{C}$ érték függvényében ábrázoljuk az FWHM értéket, ahol $\overline{C}$ az átlagos kontrasztfaktor. Ez a faktor köbös rácsok esetére kiszámítható az alábbi módon:
+
+\begin{equation}
+\overline{C}
+=
+\overline{C}_{h00} * \left( 1 - qH^{2} \right)
+\end{equation}
+ahol $\overline{C}_{h00}$ a $hkl = h00$ rácssíkokhoz tartozó átlagos kontrasztfaktor, $H^{2}$ pedig a $hkl$ rácssíkok Miller-indexeiből kapott érték:
+
+\begin{equation}
+H^{2}
+=
+\frac{h^{2} k^{2} + h^{2} l^{2} + k^{2} l^{2}}{\left( h^{2} + k^{2} + l^{2} \right)^{2}}
+\end{equation}
+Végül $q$ az anyag rugalmas állandóitól, valamint a benne található diszlokációk típusától függő kontraszt. Mind a $\overline{C}_{h00}$, mind pedig a $q$ mennyiségek értékét a laborleírásban található táblázatból néztük ki, melyek az alábbiak voltak a Cu esetére:
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline
-\multicolumn{3}{|c|}{Forgatási szögek} \\ \hline \hline
-x            & y             & z            \\ \hline
-$35^{\circ}$ & $-35^{\circ}$ & $45^{\circ}$ \\
-\hline
+Diszl. típusa & $\overline{C}_{h00}$ & $q$    \\ \hline\hline
+Él            & $0.3076$             & $1.67$ \\
+Csavar        & $0.3029$             & $2.33$ \\ \hline
+Átlag         & $0.30525$            & $2$    \\ \hline
 \end{tabular}
-\captionof{table}{A szilíciumlapka rácsának sztereografikus módban történő forgatási szögeinek értéke. Az egyes oszlopok az adott tengely körül történő forgatást jelentik.} \label{table:2}
 \end{center}
-Hasonlóan az előzőhöz a gyémántdarab orientációjának vizsgálatához az alábbi pontokat választottam:
+A $g^{2} \overline{C}$ -- FWHM függvényt háromféle módon is ábrázoltuk. Első esetben kizárólagosan az éldiszlokációkra vonatkozó $\overline{C}_{h00}$ és $q$, majd a csavardiszlokációkra vonatkozó értékek függvényében ábrázoltuk a félértékszélességet. Végül ezen értékek átlagára számítottuk ki a $\overline{C}$ értéket és azt használtuk fel az ábrázoláshoz. Az így kapott függvény pontokra egy másodrendű polinom illeszthető, mely illesztésből megbecsülhető az adott mérés jósága. A módosított Williamson-Hall ábrák az említett sorrendben a (\ref{fig:4})-(\ref{fig:6}) képeken láthatóak.
+
+\subsection{CMWP módszer}
+A CMWP illesztést egy újabb szoftver segítségével végeztük el, mely szinte interakció nélkül, egyszerűen néhány kezdeti paraméter megadása után elvégezte a teljes kiértékelést és az illesztést. Eredményként megkaptunk számtalan mikroszerkezeti- és diffrakciós profil illesztési paramétert. A mért adatsorra illesztett görbe, valamint ezen kettő különbségének függvénye a (\ref{fig:7})-es ábrán látható. Végeredményben az alábbi mikroszerkezeti paramétereket adta vissza az illesztés:
 
 \begin{center}
-\begin{tabular}{|c|c|c|c|c|}
+\begin{tabular}{|c|c|}
 \hline
-\multicolumn{5}{|c|}{Miller-indexek} \\ \hline \hline
-h & -5 & -3 & -7 & -3 \\
-k & -3 & -3 & -1 & -6 \\
-l & -2 & -1 & -6 & -5 \\
-\hline
-\end{tabular}
-\captionof{table}{A gyémántrács orientációjának kiszámításához felhasznált Miller-indexű pontok.} \label{table:3}
-\end{center}
-Sztereografikus pozícióban alábbi szögű forgatásokat végeztem el, hogy hasonló
-
-\begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
-\multicolumn{3}{|c|}{Forgatási szögek} \\ \hline \hline
-x            & y             & z            \\ \hline
-$54^{\circ}$ & $-35^{\circ}$ & $45^{\circ}$ \\
+Paraméter & Érték       \\ \hline \hline
+\multicolumn{2}{|c|}{\textbf{Méret-paraméterek}} \\ \hline
+m              & 6.539955 nm               \\
+$\sigma$       & 0.915908                  \\
+d              & 137619 nm                 \\
+L$_{0}$        & 4268.16 nm                \\ \hline
+\multicolumn{2}{|c|}{\textbf{Deformáció-paraméterek}} \\ \hline
+q              & 1.96102                   \\
+$\varrho$      & 0.00061786 nm$^{-2}$      \\
+R$_{e}^{\ast}$ & 48.9026 nm                \\
+M$^{\ast}$     & 1.21556                   \\
 \hline
 \end{tabular}
-\captionof{table}{A gyémántrács sztereografikus módban történő forgatási szögeinek értéke. Az egyes oszlopok az adott tengely körül történő forgatást jelentik.} \label{table:4}
-\end{center}
-Végül a sókristályra kapott értékek a fentiekhez hasonlóan a következők:
-
-\begin{center}
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\multicolumn{5}{|c|}{Miller-indexek} \\ \hline \hline
-h & -4 & -4 & -2 & -1 \\
-k & -1 & -2 & -1 &  0 \\
-l &  0 & -1 &  0 &  0 \\
-\hline
-\end{tabular}
-\captionof{table}{A sókristály orientációjának kiszámításához felhasznált Miller-indexű pontok.} \label{table:5}
-\end{center}
-\begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
-\multicolumn{3}{|c|}{Forgatási szögek} \\ \hline \hline
-x            & y             & z            \\ \hline
-$133^{\circ}$ & $0^{\circ}$ & $1^{\circ}$   \\
-\hline
-\end{tabular}
-\captionof{table}{A sókristály sztereografikus módban történő forgatási szögeinek értéke. Az egyes oszlopok az adott tengely körül történő forgatást jelentik.} \label{table:6}
 \end{center}
 
 \section{Diszkusszió}
-Míg szemmel vizsgálva a gyémánt és a szilícium esetén elég pontosan sikerült megállapítani a rácsszerkezetben található atomok pozícióját, addig a a sóminta esetén csak egy közelítő becslést sikerült az OrientExpress szoftverrel megadni. A mérési eredmények pontossága tovább javítható lenne újabb, jobb minőségű felvételek készítésével, vagy még inkább korszerűbb elemző szoftverek alkalmazásával. Sajnos a labormérés keretében ezek nem álltak rendelkezésünkre, így itt az általam elért legjobb, azonban objektíve nem teljesen pontos eredményeket kellett közölnöm.
+A labor során megismerkedtünk a röntgen vonalprofil analízis mérési módszerével és sikeresen megvalósítottuk a Williamson-Hall ábrázolást, valamint a CMWP-illesztést.
 
 \end{multicols}
