@@ -85,27 +85,56 @@ Csavar        & $0.3029$             & $2.33$ \\ \hline
 A $g^{2} \overline{C}$ -- FWHM függvényt háromféle módon is ábrázoltuk. Első esetben kizárólagosan az éldiszlokációkra vonatkozó $\overline{C}_{h00}$ és $q$, majd a csavardiszlokációkra vonatkozó értékek függvényében ábrázoltuk a félértékszélességet. Végül ezen értékek átlagára számítottuk ki a $\overline{C}$ értéket és azt használtuk fel az ábrázoláshoz. Az így kapott függvény pontokra egy másodrendű polinom illeszthető, mely illesztésből megbecsülhető az adott mérés jósága. A módosított Williamson-Hall ábrák az említett sorrendben a (\ref{fig:4})-(\ref{fig:6}) képeken láthatóak.
 
 \subsection{CMWP módszer}
-A CMWP illesztést egy újabb szoftver segítségével végeztük el, mely szinte interakció nélkül, egyszerűen néhány kezdeti paraméter megadása után elvégezte a teljes kiértékelést és az illesztést. Eredményként megkaptunk számtalan mikroszerkezeti- és diffrakciós profil illesztési paramétert. A mért adatsorra illesztett görbe, valamint ezen kettő különbségének függvénye a (\ref{fig:7})-es ábrán látható. Végeredményben az alábbi mikroszerkezeti paramétereket adta vissza az illesztés:
+A CMWP illesztést egy újabb szoftver segítségével végeztük el, mely szinte interakció nélkül, egyszerűen néhány kezdeti paraméter megadása után elvégezte a teljes kiértékelést és az illesztést. Eredményként megkaptunk számtalan mikroszerkezeti- és diffrakciós profil illesztési paramétert. A mért adatsorra illesztett görbe, valamint ezen kettő különbségének függvénye a (\ref{fig:7})-es ábrán látható. Végeredményben az alábbi illesztési és mikroszerkezeti paramétereket adta vissza az illesztés:
 
 \begin{center}
 \begin{tabular}{|c|c|}
 \hline
-Paraméter & Érték       \\ \hline \hline
-\multicolumn{2}{|c|}{\textbf{Méret-paraméterek}} \\ \hline
-m              & 6.539955 nm               \\
-$\sigma$       & 0.915908                  \\
-d              & 137619 nm                 \\
-L$_{0}$        & 4268.16 nm                \\ \hline
-\multicolumn{2}{|c|}{\textbf{Deformáció-paraméterek}} \\ \hline
-q              & 1.96102                   \\
-$\varrho$      & 0.00061786 nm$^{-2}$      \\
-R$_{e}^{\ast}$ & 48.9026 nm                \\
-M$^{\ast}$     & 1.21556                   \\
-\hline
+Paraméter                                                                        & Érték                 \\ \hline \hline
+\multicolumn{2}{|c|}{\textbf{Skálázott illesztési paraméterek}}                                          \\ \hline
+$a_{\text{sc}}$                                                                  & $1.96102$             \\
+$b_{\text{sc}}$                                                                  & $1.87793$             \\
+$c_{\text{sc}}$                                                                  & $1.29529$             \\
+$d_{\text{sc}}$                                                                  & $125.584$             \\
+$e_{\text{sc}}$                                                                  & $0.00796278$          \\ \hline
+\multicolumn{2}{|c|}{\textbf{Méret-paraméterek}}                                                         \\ \hline
+$m = e^{b_{\text{sc}}}$                                                          & $6.539955$ nm         \\
+$\sigma = \frac{c_{\text{sc}}}{\sqrt{2}}$                                        & $0.915908$            \\
+$d$                                                                              & $137619$ nm           \\
+$L_{0}$                                                                          & $4268.16$ nm          \\ \hline
+\multicolumn{2}{|c|}{\textbf{Deformáció-paraméterek}}                                                    \\ \hline
+$q = a_{\text{scaled}}$                                                          & $1.96102$             \\
+$\varrho = \frac{2}{\pi * \left( 0.2556\ \text{nm} * d_{\text{sc}} \right)^{2}}$ & $0.00061786$ nm$^{-2}$\\
+$R_{e}^{\ast} = \frac{e^{-1/4}}{2 * e_{\text{sc}}}$                              & $48.9026$ nm          \\
+$M^{\ast} = \text{R}_{e}^{\ast} * \sqrt{\varrho}$                                & $1.21556$             \\ \hline
 \end{tabular}
 \end{center}
+A kapott értékek alapján kiszámítható a szemcseméret várható eloszlása, log-normális eloszlást feltételezve. Felhasználva a CMWP illesztés során kapott $m$, szemcseméretekre vonatkozó mediánértéket, és a $\sigma$ szórást, a log-normális eloszlás sűrűségfüggvénye az alábbi módon írható fel:
+
+\begin{equation}
+F^{LN} \left(x, m, \sigma \right)
+=
+\frac{1}{x \sigma \sqrt{2 \pi}} * e^{-\dfrac{\ln \left( x / m \right)}{2 \sigma^{2}}}
+\end{equation}
+A kapott görbe a (\ref{fig:8})-as ábrán látható. Végezetül a fenti adatokból kiszámítható a szemcseméret átlagos, illetve annak felülettel, valamint térfogattal súlyozott értéke:
+
+\begin{equation}
+\left< x \right>_{\text{arit}}
+=
+9.95\ \text{nm}
+\end{equation}
+\begin{equation}
+\left< x \right>_{\text{area}}
+=
+53.26\ \text{nm}
+\end{equation}
+\begin{equation}
+\left< x \right>_{\text{vol}}
+=
+123.23\ \text{nm}
+\end{equation}
 
 \section{Diszkusszió}
-A labor során megismerkedtünk a röntgen vonalprofil analízis mérési módszerével és sikeresen megvalósítottuk a Williamson-Hall ábrázolást, valamint a CMWP-illesztést.
+A labor során megismerkedtünk a röntgen vonalprofil analízis mérési módszerével és sikeresen megvalósítottuk a Williamson-Hall ábrázolást, valamint a CMWP-illesztést. Az előbbi módszer alapján olyan ábrákat készítettünk, melyek a vizsgált mintában található szemcseméret, valamint deformációk feltérképezéséhez nyújtanak segítségét. Az utóbbi módszer pedig részletes információkkal szolgál számunkra az anyag mikroszerkezetére vonatkozóan.
 
 \end{multicols}
